@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto:wght@400&display=swap');
+body {
+  font-family: 'Roboto', sans-serif; /* Use Roboto for the body */
+}
+body, html {
+  margin: 0;
+  padding: 0;
+ 
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+  padding: 20px 0;
+
+  font-family: "inter";
+  background-color: #FFDEE9;
+  background-image: linear-gradient(84deg, #FFDEE9 0%, #B5FFFC 100%);
+  
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.button1:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.button1 {
+  background-color: #FF6384;
+}
+.button1 {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  color: #FFFFFF;
+ width: 150px;
+  border-radius: 8px;
+
+  font-size: 17px;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+}
+
+.button2:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.button2 {
+  background-color: #36A2EB;
+}
+.button2 {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  color: #FFFFFF;
+  width: 150px;
+  border-radius: 8px;
+
+  font-size: 17px;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+}
+
+
+.button3:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.button3 {
+  background-color: #4BC0C0;
+}
+.button3 {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  color: #FFFFFF;
+  width: 150px;
+  border-radius: 8px;
+
+  font-size: 16px;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+}
+
+
+.button4:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.button4 {
+  background-color: #333538;
+}
+.button4 {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 150px;
+  font-size: 17px;
+  text-decoration: none;
+ 
+  transition: box-shadow 200ms ease-out;
+}
+.button5:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.button5 {
+  background-color: #238445;
+}
+.button5 {
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 150px;
+  font-size: 17px;
+  text-decoration: none;
+ 
+  transition: box-shadow 200ms ease-out;
+}
+.navbar-logo{
+  width:600px;
+  height:80.3px;
+}
+
+
+
+

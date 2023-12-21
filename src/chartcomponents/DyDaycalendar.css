@@ -1,0 +1,231 @@
+/* Main chart container */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto:wght@400&display=swap');
+body {
+  font-family: 'inter', sans-serif; /* Use Roboto for the body */
+}
+
+
+.day-calendar-daydc {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #262829;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  overflow-y: auto; /* Enable vertical scrolling */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+
+.day-calendar-daydc::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.day-calendar-daydc {
+  -ms-overflow-style: '-ms-autohiding-scrollbar';
+}
+
+
+
+.name-row-daydc{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+ 
+}
+
+
+.calendar-header-daydc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #F7F102;
+}
+
+
+.name-daydc{
+  flex: 1; 
+  color: rgb(247, 241, 2);
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  max-width: 200px; 
+  font-size: 19px;
+}
+
+
+.calendar-header-daydc h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.calendar-body-daydc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2%;
+
+  overflow-y: auto; /* You may adjust this as per your design */
+  
+
+}
+
+
+
+.hour-row {
+  flex: 9; /* Takes 9 parts of the space */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.weekend-daydc {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hour-daydc {
+
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid #a4a4a4;
+  color: rgb(3, 3, 3);
+
+  /* Animation */
+  animation-name: slideInFromLeft;
+  animation-duration: 0.2s; /* Adjust duration as needed */
+  animation-fill-mode: both;
+  /* The animation-delay will be set dynamically */
+}
+
+
+
+.hour-row.weekend-daydc .hour-daydc {
+  background-color: #b1b8c7;
+}
+
+/* Button styling */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+.legend-daygh-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.legend-daygh-item{
+  display: flex;
+  margin-bottom: 3px;
+  color: #FFFFFF;
+  margin-right: 5px;
+  
+
+}
+.legend-daygh-color{
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+}
+
+.legend-daygh{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

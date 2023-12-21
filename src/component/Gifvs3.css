@@ -1,0 +1,17 @@
+.mainsecvsmainpssa {
+  padding-top: 50px;
+  height: 1000px;
+  width: 100%;
+
+  /* Layering the image and the gradient */
+  background-image: url('../res/allchart.png'), linear-gradient(84deg, #FFDEE9 10%, #B5FFFC 90%);
+  
+  /* Apply these properties to both backgrounds */
+  background-size: contain, auto; /* contain for the image, auto for the gradient */
+  background-position: center center; /* This centers both backgrounds */
+  background-repeat: no-repeat; /* This applies to both backgrounds */
+
+  /* The gradient color (optional if you want a fallback color) */
+  background-color: #FFDEE9;
+  padding-bottom: 20px;
+}

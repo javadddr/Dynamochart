@@ -1,0 +1,7 @@
+.ecosystem{
+  display: flex;
+  flex-direction: column;
+}
+.dashone{
+  display: flex;
+}

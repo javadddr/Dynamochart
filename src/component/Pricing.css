@@ -1,0 +1,194 @@
+/* Reset margins and padding for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
+body {
+  font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pmain {
+  background-image: url("../res/bb.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.pmain2 {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 3%;
+  width: 90%;
+}
+
+.card {
+  background-color: #f5f5f6;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.checkandtext {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconprice {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Button styling */
+.forfree a {
+  text-decoration: none;
+}
+.forfree1 a {
+  text-decoration: none;
+}
+.topnote span{
+  color: #086229;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tf span{
+  color: #086229;
+  font-size: 24px;
+  font-weight: bold;
+}
+.forfree button {
+  font-size: 1em;
+  padding: 10px 15px;
+  background-color: #113b12;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  display: block; /* Ensure the button spans the width of the container */
+  width: 100%;
+  text-align: center;
+}
+.forfree1 button {
+  font-size: 1em;
+  padding: 10px 15px;
+  background-color: #113b12;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  display: block; /* Ensure the button spans the width of the container */
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.tf{
+  font-size: 24px;
+}
+h5{
+  font-size: 19px;
+}
+
+.forfree button:hover {
+  background-color: #0cc652;
+}
+.forfree1 button:hover {
+  background-color: #0cc652;
+}
+
+
+/* Reintroduced styles for green squares */
+.greenSquare {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -35px;
+  width: 88px;
+  height: 88px;
+  background-color: #0cc652;
+  opacity: 0.2;
+  border-radius: 8px;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.greenSquare2 {
+  position: absolute;
+  content: "";
+  top: 35px;
+  right: -35px;
+  width: 88px;
+  height: 88px;
+  background-color: #0cc652;
+  opacity: 0.2;
+  border-radius: 8px;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 22%;
+  border: 1px solid black;
+  padding: 20px;
+  justify-content: space-evenly;
+  background-color: #f5f5f6;
+  margin-right: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; /* Add this line to hide the overflow */
+}
+.topnote{
+  height: 20%;
+}
+.topnote2{
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  font-size: 19px;
+  justify-content: space-between;
+}
+.actpri{
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  font-size: 19px;
+  justify-content: space-between;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 1024px) {
+  .cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: auto;
+    margin: 10px auto; /* Center cards on smaller screens */
+  }
+}
