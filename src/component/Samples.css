@@ -9,7 +9,7 @@
 }
 
 .sidebar {
-  flex: 0 0 13%; /* Sets the sidebar to 10% of the parent container's width */
+  flex: 0 0 10%; /* Sets the sidebar to 10% of the parent container's width */
   background: #1A202C;
   padding: 40px;
   overflow-y: auto; /* Allows sidebar to scroll if content overflows */
