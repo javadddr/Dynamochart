@@ -31,7 +31,7 @@
  
   position: relative; /* Needed for pseudo-element positioning */
   height: 620px;
-  border-radius: 10px;
+ 
 font-family: "Poppins";
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the border-radius */
   background-color: #FFDEE9;
@@ -185,4 +185,50 @@ font-family: "inter";
 
 .home, .gifvs, .gifvs1, .gifvs2, .action {
   animation: fadeIn 1s ease-in-out;
+}
+
+
+@media (max-width: 1100px) {
+
+  .TitleHero{
+    font-size: 40px;
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+  }
+  .halfhe{
+    padding: 20px;
+    height: 530px;
+  }
+  .home{
+    height: 570px;
+  }
+  .spand2{
+    font-size: 19px;
+    margin-top: 10px;
+    align-items: center;
+    font-family:'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .download{
+    width: 97%;
+    padding: 10px;
+  
+  }
+  .icon-container{
+    padding: 4px;
+    font-size: 12px;
+  }
+  .mainsecvsmainpssa{
+    display: none;
+  }
+
+ 
+
+  .text11001{
+    font-size: 16px;
+  }
+  .text11002{
+    display: none;
+  }
 }

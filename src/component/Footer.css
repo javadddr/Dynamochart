@@ -66,13 +66,19 @@
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .footer {
     flex-direction: column;
   }
 
   .footer-section, .footer-company-info {
     margin-bottom: 20px;
+  }
+  .justloagb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .footer-company-info h1{

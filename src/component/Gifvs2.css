@@ -62,3 +62,19 @@
 .mainsecvsmain3 h1:after {
    right:-20px;
 }
+@media (max-width: 1100px) {
+  .mainsecvsmain3{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .legend-funnel-item{
+    font-size: 10px;
+  }
+  .funnel-names{
+    font-size: 10px;
+  }
+  
+}

@@ -69,3 +69,24 @@ justify-content: space-evenly;
 button{
   cursor: pointer;
 }
+@media (max-width: 1100px) {
+  .action-container{
+    padding: 10px;
+  }
+  .action-itemp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .action-item{
+    width: 90%;
+    height: 170px;
+  }
+  .action-item p{
+    text-align: center;
+    margin: 0;
+  }
+
+}
+

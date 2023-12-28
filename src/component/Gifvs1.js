@@ -81,7 +81,7 @@ export default App;`;
       <div className='text12'>
       <div className='text11'>
       <h1>Experience Lightning-Fast Data Representation</h1>
-      Speed and efficiency are at the heart of DynamoChart. Our charts are optimized for high performance, handling large datasets with ease. Enjoy smooth, responsive visualizations that bring your data to life without compromising on speed. Perfect for real-time data applications, our charts ensure that performance is never a bottleneck in your data storytelling.
+      <div className='text11oo1'>Speed and efficiency are at the heart of DynamoChart. Our charts are optimized for high performance, handling large datasets with ease. Enjoy smooth, responsive visualizations that bring your data to life without compromising on speed.</div><div className='text11002'> Perfect for real-time data applications, our charts ensure that performance is never a bottleneck in your data storytelling.</div>
       </div>
       </div>
       <div className='mainsecvs'>
@@ -90,7 +90,7 @@ export default App;`;
             {codeString}
           </SyntaxHighlighter>
         </div>
-        <div className='samplechartgif'>
+   
         <DyLineDate
             data={data}
             xAxis="date"
@@ -105,9 +105,9 @@ export default App;`;
             defaulFunctionType='Sum'
             circleRadius={3}
             circleColor="black" ///just works when it is t1
-            chartWidth={1100}
+            chartWidth={400}
             chartHeight={500}
-            margin = {{ top: 90, right: 70, bottom: 90, left: 110 }}
+            margin = {{ top: 90, right: 70, bottom: 90, left: 90 }}
             startFrom={0.2}
             xAxisValueFont={15}
             yAxisValueFont={15}
@@ -121,7 +121,7 @@ export default App;`;
           />
 
 
-        </div>
+   
       </div>
       </div>
     </div>

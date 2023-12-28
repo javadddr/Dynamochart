@@ -53,7 +53,7 @@ const Home = () => {
     <div>
     <div className="home">
       <div className='halfhe'>
-      <div className='content'> {/* New wrapper for the content */}
+      <div className='content'> 
       <div className='TitleHero'>
       Elevate Your Data with <span className='d2'>DYNAMO</span><span className='d1'>CHART</span> <div className='spand2'>The Ultimate Charting Solution for <span className='d2'>React!</span> </div>
       </div>
@@ -73,7 +73,7 @@ const Home = () => {
             {showTooltip && <Tooltip text={tooltipText} />}
           </div>
           <div className="icon-container">
-            import &#123; YOUR CHART &#125; from 'dynamochart'
+            import &#123;YOUR CHART&#125; from 'dynamochart'
             <img 
               src={clogo} 
               alt="icon" 
@@ -96,7 +96,7 @@ const Home = () => {
         <Gifvs key={gifvsKey} />
       </div>
       
-    
+     
   
    
         <Gifvs1  />

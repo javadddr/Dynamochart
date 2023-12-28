@@ -1,25 +1,21 @@
+/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto:wght@400&display=swap');
 
-
-/* Header Styles */
-header {
+.dynamo-homepage{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background: transparent;
-  padding: 20px 0;
+  justify-content: center;
 
-  font-family: "inter";
   background-color: #FFDEE9;
   background-image: linear-gradient(84deg, #FFDEE9 0%, #B5FFFC 100%);
-  
+  padding: 40px;
 }
 
-ul{
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
+.navbar-logodyoo{
+  width: 70%;
+ 
+  height: 10%;
+
 }
 
 
@@ -138,11 +134,92 @@ ul{
  
   transition: box-shadow 200ms ease-out;
 }
-.navbar-logo{
-  width:600px;
-  height:80.3px;
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 3px;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 8%;
+}
+.navuloip {
+  display: flex;
+  list-style: none; /* This line removes the bullet points */
+  padding: 0; /* This line removes the default padding */
+  margin: 0; /* Optionally, you can also remove default margins */
 }
 
+/* ... rest of your CSS ... */
 
+@media (max-width: 1100px) {
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 5%;
+      top: 2%;
+  }
+  .button1,
+  .button2,
+  .button3,
+  .button4,
+  .button5{
+width: 100px;
+font-size: 14px;
+padding: 3px;
+margin: 4px;
+  }
+  nav {
+      display: none;
+      position: fixed;
+      top: 60px; /* Adjust the top value as needed */
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+      z-index: 1000;
+  }
 
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    left: 64%;
+    top: 6%;
+    position: fixed; /* Ensure this is set */
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Ensure background is set for visibility */
+    z-index: 1000; /* Ensure z-index is high enough */
+}
+
+  ul {
+     
+      padding: 0;
+  }
+
+  li {
+      width: 60%;
+      text-align: center;
+  }
+
+  .navbar-logodyoo {
+    width: 70%;
+    height: auto;
+    margin-top: 5px; /* Adjust height to maintain aspect ratio */
+    z-index: 100;
+  }
+  .dynamo-homepage{
+    padding: 10px;
+  }
+  .navuloip{
+    flex-direction: column;
+    background-color: transparent;
+
+  }
+}
 

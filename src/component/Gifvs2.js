@@ -1,5 +1,5 @@
 import React from 'react';
-import DyFunnel from "dynamochart/lib/DyFunnel";
+import {DyFunnel} from "dynamochart";
 
 
 import './Gifvs2.css';
@@ -29,31 +29,31 @@ const Gifvs2 = () => {
 
     <div className='mainsecvsmainp'>
       <div  className='jusblurgifp'>
-      <div className='mainsecvsmain3'><h1>Unique data analysis and visualisation features</h1></div>
+      <div className='mainsecvsmain3'><h1>Unique data analysis and <br></br>visualisation features</h1></div>
       <div className='text12'>
       <div className='text11'>
-      <h1>Discover New Perspectives in Data Visualization</h1>
+      <h1>Discover New Perspectives <br></br>in Data Visualization</h1>
 
-      DynamoChart goes beyond conventional charting. We offer unique features for data analysis and visualization that set your applications apart. Uncover hidden insights with our advanced analytical tools and present them in visually appealing, innovative formats. Transform your data into compelling stories with our versatile and unique charting options.
+      <div className='text11oo1'>DynamoChart goes beyond conventional charting. We offer unique features for data analysis and visualization that set your applications apart.</div><div className='text11002'> Uncover hidden insights with our advanced analytical tools and present them in visually appealing, innovative formats. Transform your data into compelling stories with our versatile and unique charting options.</div>
       </div>
       </div>
       <div className='mainsecvs'>
         <div className="samplechartgifrr">
-          <div className="samplechartgifrr1">
+         
         <DyFunnel
           data={data}
           colors={colors}
           showLegend={true}
-          funnelValues={true}
-          chartWiedth = {1200}
-          chartHeight = {600}
+          funnelValues={false}
+          chartWiedth = {370}
+          chartHeight = {400}
           chartTitle="Marketing Funnel Chart"
           chartTitleFontSize={22}
           showSmall={7}
           chartDecimals={0}
           chartTemplate="t2"
        />
-        </div>
+       
       
     
     
