@@ -68,7 +68,7 @@ const GetStarted = () => {
       </div>
       </div>
       {/* Second Step */}
-      <div className="step">
+      <div className="step2">
       <div className='stepotitleget'>
       <img src={stepImage} alt="Step" className="step-image" /> {/* Add this line */}
       <div className='title1get'>Second Step: <span>Import The chart components </span></div>
@@ -176,7 +176,7 @@ const GetStarted = () => {
     
       
        {/* Second Step */}
-       <div className="step">
+       <div className="step3">
       <div className='stepotitleget'>
       <img src={stepImage} alt="Step" className="step-image" /> {/* Add this line */}
       <div className='title1get'>Third Step: <span>Pay attention to the shape and structure of the data. </span></div>

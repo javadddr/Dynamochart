@@ -1,22 +1,27 @@
 
-.kamel{
-  background-image: url("../res/bb.jpeg");
-  background-size: 950px 950px;
-  background-position: 700px -20px;
-  background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
 
+.kamel{
+
+display: flex;
+justify-content: center;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(84deg, #FFDEE9 0%, #B5FFFC 100%);
+  font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
   
 }
 .kamel2{
-  width: 100%;
+  width: 70%;
   height: 950px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(16px);
+
   
 }
 .contact-container {
   display: flex;
   justify-content: center;
+text-align: center;
 
   height: 930px;
   padding-bottom: 20px;
@@ -62,7 +67,7 @@
   border-radius: 10px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  width: 50%;
+  width: 30%;
   background-image: url("../res/sxz.jpg");
   background-size:cover;
   background-position:center;
@@ -82,6 +87,8 @@ height: 80vh;
 }
 .thead p{
 color: black;
+font-size: 22px;
+font-family:'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 .Address,
 .Talk,
@@ -314,23 +321,23 @@ button:disabled {
     background-image: none;
     background-position: initial;
     background-size: initial;
-    margin-top: 20px;
+ 
   }
 
   .kamel2 {
-    /* Adjust height or other styles as needed */
+    width: 97%;
     height: auto;
   }
 
   .contact-container {
-    /* Adjust styles for smaller screens */
+
     flex-direction: column;
     height: auto;
   }
 
   .contact-form,
   .contact-info {
-    /* Adjust width or other styles as needed */
+
     width: 100%;
     margin: 0;
     padding: 0;

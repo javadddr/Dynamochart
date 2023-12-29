@@ -16,6 +16,7 @@
   padding: 40px;
   display: flex;
   justify-content: center;
+  font-family:'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cards {
@@ -66,7 +67,7 @@
 }
 .tf span{
   color: #086229;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 .forfree button {
@@ -101,9 +102,10 @@
 .tf{
   font-size: 24px;
 }
-h5{
-  font-size: 19px;
-}
+.tf p{
+  font-size: 20px;
+} 
+
 
 .forfree button:hover {
   background-color: #0cc652;
@@ -145,7 +147,7 @@ h5{
   display: flex;
   flex-direction: column;
   height: 700px;
-  width: 22%;
+  width: 18%;
   border: 1px solid black;
   padding: 20px;
   justify-content: space-evenly;
@@ -165,10 +167,20 @@ h5{
   font-size: 19px;
   justify-content: space-between;
 }
+.topnote21{
+  font-size: 19px;
+}
 .actpri{
   display: flex;
   flex-direction: column;
   height: 20%;
+  font-size: 19px;
+  justify-content: space-between;
+}
+.actpri1{
+  display: flex;
+  flex-direction: column;
+  height: 4%;
   font-size: 19px;
   justify-content: space-between;
 }
@@ -188,5 +200,18 @@ h5{
   .card {
     width: auto;
     margin: 10px auto; /* Center cards on smaller screens */
+  }
+}
+
+
+@media (max-width: 1100px) {
+
+  .card1 {
+   
+    height: 500px;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .1);
+  
   }
 }

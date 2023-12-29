@@ -34,14 +34,14 @@ const Pricing = () => {
             </div>
           <div className='topnote2'>
             <p>Just for Development and testing </p>
-            <p>17 Charts</p>
+           
           </div>
           <div className='actpri'>
           
           </div>
           <div className='undercard'>
             <div className='checkandtext'>
-              <img className='iconprice' src={dido} alt="Checkmark Icon" /> <h className='checkm'>17 Charts </h>
+              <img className='iconprice' src={dido} alt="Checkmark Icon" /> <h className='checkm'>16 Charts </h>
             </div>
             <div className='checkandtext'>
             <img className='iconprice' src={dido} alt="Checkmark Icon"/> <h className='checkm'>Ultimate requests</h>
@@ -74,7 +74,7 @@ const Pricing = () => {
             </div>
             <div className='topnote2'>
             <p>For One Year </p>
-            <p>17 Charts</p>
+          
           </div>
           <div className='actpri'>
            
@@ -83,7 +83,7 @@ const Pricing = () => {
        
           <div className='undercard'>
           <div className='checkandtext'>
-              <img className='iconprice' src={dido} alt="Checkmark Icon" /> <h className='checkm'>17 Charts </h>
+              <img className='iconprice' src={dido} alt="Checkmark Icon" /> <h className='checkm'>16 Charts </h>
             </div>
             <div className='checkandtext'>
             <img className='iconprice' src={dido} alt="Checkmark Icon"/> <h className='checkm'>Ultimate requests</h>
@@ -116,17 +116,17 @@ const Pricing = () => {
             <h1>Premium</h1>
             <h><span> &#36; 1199</span></h>
             </div>
-            <div className='topnote2'>
-            <p>For 5 years </p>
-            <p>17 charts + Source code after the end of the billing period</p>
+            <div className='topnote21'>
+            <p>For 3 years </p>
+
           </div>
-          <div className='actpri'>
+          <div className='actpri1'>
           
           </div>
        
           <div className='undercard'>
           <div className='checkandtext'>
-              <img className='iconprice' src={dido} alt="Checkmark Icon" /> <h className='checkm'>17 Charts </h>
+              <img className='iconprice' src={dido} alt="Checkmark Icon" /> <h className='checkm'>16 Charts </h>
             </div>
             <div className='checkandtext'>
             <img className='iconprice' src={dido} alt="Checkmark Icon"/> <h className='checkm'>Ultimate requests</h>
@@ -148,6 +148,10 @@ const Pricing = () => {
             <img className='iconprice' src={dido} alt="Checkmark Icon"/> <h className='checkm'>Access to source code and CSS</h>
             
             </div>
+            <div className='checkandtext'>
+            <img className='iconprice' src={dido} alt="Checkmark Icon"/> <h className='checkm'> Accsess to new charts</h>
+            
+            </div>
           
           
         
@@ -163,9 +167,10 @@ const Pricing = () => {
         <div className='card1'>
         <div className='topnote'>
             <h1>Enterprise</h1>
+            <h><span> &#36;70 - &#36;150</span></h>
             </div>
        
-          <h5>Order custom charts or dashboards</h5>
+          <h5>Order custom charts and dashboards</h5>
           <div className='tf'>
         <p>New chart owned by DynamoChart:<br></br> <span>€70</span></p>
               
@@ -174,11 +179,11 @@ const Pricing = () => {
           <div className='tf'>
           <p>New chart owned by you: <br></br><span>€150</span></p>
               </div>
-                <div className='forfree'>
-            <a href="https://billing.globalpackagetracker.com/login" target="_blank" rel="noopener noreferrer">
-              <button className='linkmainsd'>Contact us</button>
-            </a>
-          </div>
+              <div className='forfree1'>
+  <Link to="/contact">
+    <button className='linkmainsdrr'>Contact us</button>
+  </Link>
+</div>
                 <div className="greenSquare"></div>
           <div className="greenSquare2"></div>
         

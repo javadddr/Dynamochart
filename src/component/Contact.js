@@ -173,9 +173,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className='sewomi'>
-                <img className='axi2' src={CX} alt="" />
-              </div>
+            
               {isPopupVisible && (
                 <div className="popup">
                   <div className="popup-content">

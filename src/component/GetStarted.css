@@ -6,6 +6,7 @@ display:flex;
 flex-direction: column;
 background-color: #FFDEE9;
 background-image: linear-gradient(84deg, #FFDEE9 0%, #B5FFFC 100%);
+font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .title1get span{
   color: #16129c;
@@ -26,10 +27,92 @@ align-items: center;
   
   
 }
-.linkforlearningdd{
-  margin-left: 10px;
-  margin-right: 10px;
+.linkforlearningdd {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #36A2EB; 
+  color: white; 
+  text-align: center;
+  text-decoration: none;
+ font-size: 21px;
+  border-radius: 5px; 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
 }
+
+.linkforlearningdd:hover,
+.linkforlearningdd:focus {
+  background-color: #0056b3; 
+  text-decoration: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.linkforlearningdd:active {
+  background-color: #004085; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.linkforlearningdd:focus-visible {
+  outline: 2px solid #004085;
+  outline-offset: 2px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .linkforlearningdd {
+      padding: 8px 16px;
+      font-size: smaller; 
+  }
+  .step-image{
+    display: none;
+  }
+  .stepotitleget{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .firststepback{
+    height: 300px;
+  }
+  .jusiframe1{
+    display: none;
+  }
+  .code-snippet12 {
+    height: 170px;
+  }
+  .step2{
+    padding-top: 400px;
+  }
+  .title1get{
+    padding-top: 0;
+  }
+  .codevideo2{
+    height: 1100px;
+  }
+  .step3{
+    margin-top: 400px;
+  }
+  .subsecound{
+    font-size:20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+ 
+ 
+  
+   .code-snippet2 th{
+    background-color: #16129c;
+   }
+
+  
+
+}
+
 .codevideo2{
   display: flex;
   justify-content: space-around;
@@ -42,7 +125,6 @@ align-items: center;
   justify-content: space-around;
 align-items: center;
 
-  height: 600px;
 }
 .jusiframe1{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -50,11 +132,11 @@ align-items: center;
 
 .step {
 
-  backdrop-filter: blur(10px);
   width: 100%;
-
+border-bottom: 3px solid black;
 
 }
+
 
 
 
@@ -126,12 +208,13 @@ align-items: center;
 .code-snippet12 {
   display: flex;
   flex-direction: column;
-  height: 110px;
+  height: 130px;
   font-family: 'Courier New', Courier, monospace; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
-
+background-color: #333333 ;
+margin: 5px;
 }
 
 .step-image {
@@ -151,6 +234,8 @@ align-items: center;
   display: flex;
   justify-content: center;
   color: black;
+  align-items: center;
+  text-align: center;
   font-size:25px;
   padding-left: 200px;
   padding-right: 200px;
@@ -163,12 +248,12 @@ align-items: center;
 
 
 .code-snippet2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
-  overflow-x: auto; /* Allows for horizontal scrolling on smaller screens */
-  margin: 20px 0; /* Adds margin around the table */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
-  border-radius: 8px; /* Rounded corners for the container */
-  overflow: hidden; /* Ensures the border-radius clips the table */
+  font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow-x: auto;
+  margin: 20px 0; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  border-radius: 8px; 
+  overflow: hidden; 
 }
 
 .code-snippet2 table {
@@ -186,7 +271,7 @@ align-items: center;
 .code-snippet2 th {
   background-color: #4CAF50; /* A deep green background for headers */
   color: white; /* White text for contrast */
-  font-size: 1.1em; /* Slightly larger font for headers */
+  font-size: 14px; /* Slightly larger font for headers */
 }
 
 .code-snippet2 tbody tr:nth-child(odd) {
