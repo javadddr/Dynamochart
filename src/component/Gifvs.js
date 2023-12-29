@@ -1,7 +1,7 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import {DyLine} from "dynamochart";
-
+import gif1 from "../res/gif1.gif"
 import './Gifvs.css';
 
 
@@ -24,7 +24,6 @@ import {DyLine} from 'dynamochart'
 const App = () => {
   const data = data
   const colors = colors;
-
   return (
     <div>
       <DyLine
@@ -40,7 +39,6 @@ const App = () => {
     </div>
   );
 };
-
 export default App;`;
 
   return (
@@ -56,12 +54,12 @@ export default App;`;
       </div>
       </div>
       <div className='mainsecvs'>
-        <div className="sampleCode">
+        <div className="sampleCodegiv1">
           <SyntaxHighlighter language="javascript" >
             {codeString}
           </SyntaxHighlighter>
         </div>
-        
+        <div className='barformaingif'>
         <DyLine
           data={data}
           colors={colors}
@@ -69,8 +67,8 @@ export default App;`;
           yAxisTitle = "Packages"
           lineShape="curveMonotoneX"       
           chartTitle="Number of packages sent"
-          chartWidth={400}
-          chartHeight={460}
+          chartWidth={900}
+          chartHeight={470}
           legendTitle='Lines'
           lineAreaColor={true}
           areaColorOpacity={0.0}
@@ -79,8 +77,10 @@ export default App;`;
           dataPoints={5}
           chartBorder={true}
         />
-          {/* <img src={gif1} alt="Chart Animation"  className='samplechartgif1'/>  */}
-    
+        </div>
+        <div className='givonebar'>
+          <img src={gif1} alt="Chart Animation"  className='samplechartgif1'/> 
+          </div>
       </div>
       </div>
     </div>

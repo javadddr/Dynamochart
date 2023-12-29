@@ -1,7 +1,7 @@
 import React from 'react';
 import {DyFunnel} from "dynamochart";
 
-
+import gif3 from "../res/gif3.gif"
 import './Gifvs2.css';
 
 
@@ -39,14 +39,14 @@ const Gifvs2 = () => {
       </div>
       <div className='mainsecvs'>
         <div className="samplechartgifrr">
-         
+        <div className='barformaingif'>
         <DyFunnel
           data={data}
           colors={colors}
           showLegend={true}
-          funnelValues={false}
-          chartWiedth = {370}
-          chartHeight = {400}
+          funnelValues={true}
+          chartWiedth = {970}
+          chartHeight = {450}
           chartTitle="Marketing Funnel Chart"
           chartTitleFontSize={22}
           showSmall={7}
@@ -55,8 +55,10 @@ const Gifvs2 = () => {
        />
        
       
-    
-    
+       </div>
+       <div className='givonebar'>
+          <img src={gif3} alt="Chart Animation"  className='samplechartgif1'/> 
+          </div>
         </div>
       </div>
       </div>

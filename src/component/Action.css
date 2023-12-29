@@ -1,5 +1,8 @@
 .action-container {
- 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
   padding: 20px;
   padding-top: 50px;
   background-color: #f2f4f8;
@@ -7,11 +10,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding-left: 100px;
   padding-right: 100px;
+  font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.action-container h2 {
-  color: #333;
-  margin-bottom: 20px;
+.action-container h2{
+  font-size: 30px;
 }
 
 .action-item {
@@ -20,9 +23,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 height: 300px;
-width: 20%;
-  
+width: 30%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .action-item h3 {

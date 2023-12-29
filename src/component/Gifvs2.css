@@ -12,6 +12,10 @@
 
   justify-content: flex-start;
   padding: 50px;
+  font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.givonebar{
+  display: none;
 }
 .mainsecvsmainp {
   background-color: #8efcbf;
@@ -45,7 +49,9 @@
 
 
 .mainsecvsmain3 h1 {
-  position:relative; font-size:20px; font-weight:700;  letter-spacing:0px; text-transform:uppercase; width:550px;  margin:auto; white-space:nowrap; border:2px solid #222;padding:5px 11px 3px 11px;
+  display: flex;
+  justify-content: center;
+  position:relative; font-size:20px; font-weight:700;  letter-spacing:0px; text-transform:uppercase; width:350px;  margin:auto; white-space:nowrap; border:2px solid #222;padding:5px 11px 3px 11px;
 }
 .mainsecvsmain3 h1:before, .mainsecvsmain3 h1:after {
     background-color: #c50000;
@@ -75,6 +81,17 @@
   }
   .funnel-names{
     font-size: 10px;
+  }
+  .givonebar{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+   
+  }
+  .givonebar img{
+    display:flex;
+    height: 250px;
+    width: 390px;
   }
   
 }

@@ -11,15 +11,53 @@ const Home = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipText, setTooltipText] = useState('Copy to clipboard');
 
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text);
-    setTooltipText('Copied!');
+  const copyToClipboardFallback = (text) => {
+    // Create a temporary text area element
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+  
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+  
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+  
+    try {
+      document.execCommand('copy');
+      setTooltipText('Copied!');
+    } catch (err) {
+      console.error('Fallback: Oops, unable to copy', err);
+    }
+  
+    document.body.removeChild(textArea);
     setTimeout(() => {
       setTooltipText('Copy to clipboard');
       setShowTooltip(false);
     }, 2000); // Reset tooltip text after 2 seconds
   };
-
+  
+  const copyToClipboard = (text) => {
+    if (!navigator.clipboard) {
+     
+      copyToClipboardFallback(text);
+      return;
+    }
+  
+    navigator.clipboard.writeText(text).then(() => {
+      setTooltipText('Copied!');
+      setTimeout(() => {
+        setTooltipText('Copy to clipboard');
+        setShowTooltip(false);
+      }, 2000); // Reset tooltip text after 2 seconds
+    }).catch(err => {
+      
+    });
+  };
+  
+  
   const handleMouseEnter = () => {
     setShowTooltip(true);
   };
@@ -51,65 +89,52 @@ const Home = () => {
 
   return (
     <div>
-    <div className="home">
+      <div className='home'>
       <div className='halfhe'>
-      <div className='content'> 
-      <div className='TitleHero'>
-      Elevate Your Data with <span className='d2'>DYNAMO</span><span className='d1'>CHART</span> <div className='spand2'>The Ultimate Charting Solution for <span className='d2'>React!</span> </div>
-      </div>
-      <br></br>
-      <div className='download'>
-      <div className="code-snippet1">
-          <div className="icon-container">
-            npm install dynamochart
-            <img 
-              src={clogo} 
-              alt="icon" 
-              className="icon" 
-              onClick={() => copyToClipboard('npm install dynamochart')}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
-            {showTooltip && <Tooltip text={tooltipText} />}
+          <div className='TitleHero'>
+            <div className='herotitlefo'> Elevate Your Data with</div> <div><span className='d2'>DYNAMO</span><span className='d1'>CHART</span></div> 
+            <div className='spand2'>The Ultimate Charting Solution for <span className='d2'>React!</span> </div>
           </div>
-          <div className="icon-container">
-            import &#123;YOUR CHART&#125; from 'dynamochart'
-            <img 
-              src={clogo} 
-              alt="icon" 
-              className="icon" 
-              onClick={() => copyToClipboard(`import {DyBar} from 'dynamochart'`)}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
-            {showTooltip && <Tooltip text={tooltipText} />}
-          </div>
-        </div>
+          <div className='download'>
+          <div className="code-snippet1">
+              <div className="icon-container">
+                npm install dynamochart
+                <img 
+                  src={clogo} 
+                  alt="icon" 
+                  className="icon" 
+                  onClick={() => copyToClipboard('npm install dynamochart')}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+                {showTooltip && <Tooltip text={tooltipText} />}
+              </div>
+              <div className="icon-container">
+                import &#123;CHART&#125; from 'dynamochart'
+                <img 
+                  src={clogo} 
+                  alt="icon" 
+                  className="icon" 
+                  onClick={() => copyToClipboard(`import {DyBar} from 'dynamochart'`)}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+                {showTooltip && <Tooltip text={tooltipText} />}
+              </div>
+            </div>
 
+          </div>
       </div>
       </div>
-      </div>
-      
-    </div>
     <Gifvs3  />
     <div onMouseEnter={refreshGifvsOnHover}>
         <Gifvs key={gifvsKey} />
       </div>
-      
-     
-  
-   
         <Gifvs1  />
-
-
       <div onMouseEnter={refreshGifvs2OnHover}>
         <Gifvs2 key={gifvs2Key} />
       </div>
-
-    
         <Action/>
-      
-
     </div>
   );
 };

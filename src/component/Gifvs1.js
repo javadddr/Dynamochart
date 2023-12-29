@@ -1,7 +1,7 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import {DyLineDate} from "dynamochart";
-
+import gif2 from "../res/gif2.gif"
 import './Gifvs1.css';
 
 
@@ -85,12 +85,12 @@ export default App;`;
       </div>
       </div>
       <div className='mainsecvs'>
-        <div className="sampleCode">
+        <div className="sampleCodegiv1">
           <SyntaxHighlighter language="javascript" >
             {codeString}
           </SyntaxHighlighter>
         </div>
-   
+        <div className='barformaingif'>
         <DyLineDate
             data={data}
             xAxis="date"
@@ -105,8 +105,8 @@ export default App;`;
             defaulFunctionType='Sum'
             circleRadius={3}
             circleColor="black" ///just works when it is t1
-            chartWidth={400}
-            chartHeight={500}
+            chartWidth={800}
+            chartHeight={400}
             margin = {{ top: 90, right: 70, bottom: 90, left: 90 }}
             startFrom={0.2}
             xAxisValueFont={15}
@@ -119,8 +119,10 @@ export default App;`;
             template="t2"
             lineShape="curveNatural"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */  
           />
-
-
+</div>
+<div className='givonebar'>
+          <img src={gif2} alt="Chart Animation"  className='samplechartgif1'/> 
+          </div>
    
       </div>
       </div>
