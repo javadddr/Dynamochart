@@ -1,6 +1,6 @@
 
 
-import DyPercentageBar from "../chartcomponents/DyPercentageBar";
+import {DyPercentageBar} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

@@ -1,7 +1,7 @@
 
 
 
-import DyPie from "../chartcomponents/DyPie";
+import {DyPie} from "dynamochart";
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Pie = () => {

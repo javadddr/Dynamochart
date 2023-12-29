@@ -1,5 +1,5 @@
 
-import DySideStackChart from "../chartcomponents/DySideStackChart";
+import {DySideStackChart} from "dynamochart"
 
 
 import "./StackVertica.css"

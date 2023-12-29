@@ -1,6 +1,6 @@
 
 
-import DyShiftCalendar from "../chartcomponents/DyShiftCalendar";
+import {DyShiftCalendar} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

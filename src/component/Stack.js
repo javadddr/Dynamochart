@@ -1,5 +1,5 @@
 
-import DyStackChart from "../chartcomponents/DyStackChart";
+import {DyStackChart} from "dynamochart";
 
 
 import "./Stack.css"

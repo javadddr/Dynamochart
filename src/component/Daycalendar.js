@@ -1,6 +1,6 @@
 
 
-import DyDaycalendar from "../chartcomponents/DyDaycalendar";
+import {DyDaycalendar} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

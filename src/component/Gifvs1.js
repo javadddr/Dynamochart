@@ -1,6 +1,6 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import DyLineDate from "../chartcomponents/DyLineDate";
+import {DyLineDate} from "dynamochart";
 
 import './Gifvs1.css';
 

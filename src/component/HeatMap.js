@@ -1,5 +1,5 @@
 
-import DyHeatMap from "../chartcomponents/DyHeatMap";
+import {DyHeatMap} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -15,7 +15,7 @@ const HeatMap = () => {
     { Date: '2023-06-02', Channel: 'Add_to_chart', Facebook: 2320, Google: 120, Insta: 65, Email: 5, Tiktok: 5 },
   ];
   
-  const colors = '#D8DD2B'
+  const colors = '#4BC0C0'
   
    
   
@@ -77,7 +77,11 @@ const HeatMap = () => {
           chartWidth={1300}
           chartHeight={600}
           chartTitle="Conversion Rate "
-          xAxisRotate={45}
+          xAxisRotate={0}
+          chartTemplate="t1"
+          fontValues={14}
+          colorValues="black"
+   
         />
         </div>
         <div className="mainchartsBar2">

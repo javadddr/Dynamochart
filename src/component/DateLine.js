@@ -1,6 +1,6 @@
 
 
-import DyLineDate from "../chartcomponents/DyLineDate";
+import {DyLineDate} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -98,7 +98,7 @@ const DateLine = () => {
             defaulFunctionType='Sum'
             circleRadius={3}
             circleColor="black" ///just works when it is t1
-            chartWidth={900}
+            chartWidth={700}
             chartHeight={400}
             margin = {{ top: 90, right: 70, bottom: 90, left: 110 }}
             startFrom={0.2}
@@ -126,7 +126,7 @@ const DateLine = () => {
             defaulFunctionType='Sum'
             circleRadius={3}
             circleColor="black" ///just works when it is t1
-            chartWidth={900}
+            chartWidth={700}
             chartHeight={400}
             margin = {{ top: 90, right: 70, bottom: 90, left: 110 }}
             startFrom={0.2}

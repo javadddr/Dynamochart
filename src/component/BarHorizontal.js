@@ -1,6 +1,6 @@
 
 
-import DyBarHorizontal from "../chartcomponents/DyBarHorizontal";
+import {DyBarHorizontal} from "dynamochart";
 import "./BarHorizontal.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const BarHorizontal = () => {
@@ -82,7 +82,7 @@ const BarHorizontal = () => {
         showYLabels = {true}
         chartTitle = "Number of shipments"
         grid={true}
-        gridNumber={3}
+        gridNumber={5}
         gridColor="green"
         sort='n'  //az,za,n
         barHeight = {60}

@@ -1,6 +1,6 @@
 
 
-import DyCalendar from "../chartcomponents/DyCalendar";
+import {DyCalendar} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -75,16 +75,18 @@ const Calendar = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyCalendar 
-            data={data}
-            colors={colors}    ///either use colors or chartColor
-            // chartColor={{red:244,green:238,blue:244,singel:false}}   
-            mode="value" ///value  and activities
-            showLabel={true}
-            labelColor="#ffa8a8"
-            showSummery={false}
-            chartWidth={1600}
-            chartHeight={650}
-            />
+      data={data}
+      colors={colors}    ///either use colors or chartColor
+      chartColor={{red:244,green:238,blue:244,singel:false}}   
+      mode="value" ///value  and activities
+      showAll="all"   //all,Sum,Ave,Max,Min
+      showLabel={true}
+      labelColor="#ffa8a8"
+      showSummery={true}
+      chartWidth={1300}
+      chartHeight={700}
+      />
+
 
         </div>
         <div className="mainchartsBar2">

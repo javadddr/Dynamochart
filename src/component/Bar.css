@@ -14,7 +14,9 @@
   justify-content: space-evenly;
   
 }
-
+.dybar-chart{
+  border: 1px solid black;
+}
 .sampleCodebar {
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
   border: 1px solid black;

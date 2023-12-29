@@ -1,5 +1,5 @@
 
-import DyFunnel from "dynamochart/lib/DyFunnel";
+import {DyFunnel} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

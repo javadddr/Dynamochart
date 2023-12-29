@@ -1,5 +1,5 @@
 
-import DyGauge from "../chartcomponents/DyGauge";
+import {DyGauge} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

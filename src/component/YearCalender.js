@@ -1,7 +1,7 @@
 
 
 
-import DyYearCalender from "../chartcomponents/DyYearCalender";
+import {DyYearCalender} from "dynamochart";
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const YearCalender = () => {

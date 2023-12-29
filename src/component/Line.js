@@ -1,5 +1,5 @@
 
-import DyLine from "../chartcomponents/DyLine";
+import {DyLine} from "dynamochart";
 
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -8,8 +8,6 @@ const Line = () => {
     { date: "2022-01-01", labels: ['Hub 1', 'Hub 2', 'Hub 3', 'Hub 4'], values: [200, 150, 320, 50] },
     { date: "2022-01-02", labels: ['Hub 1', 'Hub 2', 'Hub 3', 'Hub 4'], values: [100, 100, 220, 150] },
     { date: "2022-01-03", labels: ['Hub 1', 'Hub 2', 'Hub 3', 'Hub 4'], values: [220, 250, 300, 170] },
-    { date: "2022-01-04", labels: ['Hub 1', 'Hub 2', 'Hub 3', 'Hub 4'], values: [117, 160, 90, 210] },
-    { date: "2022-01-05", labels: ['Hub 1', 'Hub 2', 'Hub 3', 'Hub 4'], values: [320, 100, 120, 450] },
     { date: "2022-01-06", labels: ['Hub 1', 'Hub 2', 'Hub 3', 'Hub 4'], values: [200, 150, 320, 50] }
   ];
   
@@ -72,7 +70,7 @@ const Line = () => {
           yAxisTitle = "Packages"
           lineShape="curveMonotoneX"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */
           chartTitle="Number of packages sent"
-          chartWidth={1300}
+          chartWidth={800}
           chartHeight={500}
           legendTitle='Lines'
           lineAreaColor={true}
@@ -89,7 +87,7 @@ const Line = () => {
           yAxisTitle = "Packages"
           lineShape="curveMonotoneX"        /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */
           chartTitle="Number of packages sent"
-          chartWidth={1300}
+          chartWidth={800}
           chartHeight={500}
           legendTitle='Lines'
           lineAreaColor={true}

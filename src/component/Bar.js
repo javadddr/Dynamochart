@@ -1,6 +1,6 @@
 
-import DyBar from "../chartcomponents/DyBar";
-import { Link } from 'react-router-dom';
+import {DyBar} from "dynamochart";
+
 import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Bar = () => {
@@ -115,21 +115,21 @@ const Bar = () => {
             xAxisTick={true}
             yAxisTick={true}
             gridLine={true}
-            barsWidth={16}
+            barsWidth={6}
             barBorderRadius={2} // Adjust the border radius for the bars
             barBorderColor="black" // Adjust the border color for the bars
             // yAxisLabelH={50}
             // yAxisLabelV={50}
           
             showTooltip = {true}
-            cWidth = {800}
+            cWidth = {700}
             cHeight = {500}
             chartPadding={{ top: 110, right: 80, bottom: 150, left: 110 }}
             template='t1'
             chartBorder={10}  //border redius
             chartBoxShadow={false}
             sortV = 'za' // Adjust the sort "za","az","n"
-            sortD='n'
+            // sortD='n'
             dateFormat='dd-mm-yyyy' //can be 'dd-mm-yyyy' or 'mm-dd-yyyy'
             xAxisLabelM={20}
             hoverColor="#E6E3E3"
@@ -162,14 +162,14 @@ const Bar = () => {
             xAxisTick={true}
             yAxisTick={true}
             gridLine={false}
-            barsWidth={16}
+            barsWidth={6}
             barBorderRadius={2} // Adjust the border radius for the bars
             barBorderColor="black" // Adjust the border color for the bars
             // yAxisLabelH={50}
             // yAxisLabelV={50}
           
             showTooltip = {true}
-            cWidth = {800}
+            cWidth = {700}
             cHeight = {500}
             chartPadding={{ top: 110, right: 80, bottom: 150, left: 110 }}
             template='t2'

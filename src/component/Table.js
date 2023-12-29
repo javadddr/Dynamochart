@@ -1,20 +1,21 @@
 
 
-import DyTable from "../chartcomponents/DyTable";
+import {DyTable} from "dynamochart";
 import "./StackVertica.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Table = () => {
   const rows = [
-    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-    { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Marius"},tag:"sent" },
+    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Tim"},tag:"transit"},
+    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Rick"} ,tag:"sent"},
+    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"laura"} ,tag:""},
+    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Flo"},tag:"sent" },
+    { id: 6, lastName: 'Melisandre', firstName: null, age: 150 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Jim"},tag:"delivered"},
+    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"John"} ,tag:"transit"},
+    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Side"},tag:"transit"},
+    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Liliya"},tag:"excption"},
   ];
+
   
   const columns = [
     { field: 'id', headerName: 'ID', width: 70},
@@ -23,22 +24,29 @@ const Table = () => {
     {field: 'age',headerName: 'Age', type: 'number',width: 90},
    
   ];
+  const colors = {
+    sent: '#c3f4ab',
+    delivered: '#e3f781',
+    transit: '#f0f8ff',
+    excption: 'pink',
+  };
 
 
   const codeString1 = `  import React from 'react'
   import {DyTable} from 'dynamochart';
 
   const rows = [
-    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-    { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Marius"},tag:"sent" },
+    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Tim"},tag:"transit"},
+    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Rick"} ,tag:"sent"},
+    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"laura"} ,tag:""},
+    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Flo"},tag:"sent" },
+    { id: 6, lastName: 'Melisandre', firstName: null, age: 150 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Jim"},tag:"delivered"},
+    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"John"} ,tag:"transit"},
+    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Side"},tag:"transit"},
+    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Liliya"},tag:"excption"},
   ];
+
   
   const columns = [
     { field: 'id', headerName: 'ID', width: 70},
@@ -47,6 +55,13 @@ const Table = () => {
     {field: 'age',headerName: 'Age', type: 'number',width: 90},
    
   ];
+  const colors = {
+    sent: '#c3f4ab',
+    delivered: '#e3f781',
+    transit: '#f0f8ff',
+    excption: 'pink',
+  };
+
   
     return (
       <div>
@@ -69,21 +84,25 @@ const Table = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyTable 
-          rows={rows}
-          columns={columns}
-          pagesSize={10}
-          chartMaxWidth={900}
-          showSearch={false}
-          tableTemplate="t1" 
-          />
-     <DyTable 
-          rows={rows}
-          columns={columns}
-          pagesSize={10}
-          chartMaxWidth={900}
-          showSearch={true}
-          tableTemplate="t2" 
-        />
+        rows={rows}
+        colors={colors}
+        columns={columns}
+        pagesSize={10}
+        chartMaxWidth={1700}
+        showSearch={true}
+        tableTemplate="t1" 
+      />
+
+<DyTable 
+        rows={rows}
+        colors={colors}
+        columns={columns}
+        pagesSize={10}
+        chartMaxWidth={1700}
+        showSearch={true}
+        tableTemplate="t2" 
+      />
+
 
 
         </div>
