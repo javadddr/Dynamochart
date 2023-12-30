@@ -68,14 +68,29 @@ const PercentageBar = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyPercentageBar 
-          data={data}
-          colors={colors}
-          chartWidth={900}
-          chartHeight={400}
-          sort= {["Operation","descending" ]}
-          chartTitle="Departmental Overhead Rate"
-          barsGap={5}
-          barHeight={40}
+            data={data}
+            colors={colors}
+            chartWidth={900}
+            chartHeight={430}
+            sort= {["Republican","descending" ]}
+            chartTitle="Donation to the political Parties"
+            barsGap={10}
+            barHeight={50}
+            chartTemplate="t1"
+
+        />
+
+        <DyPercentageBar 
+            data={data}
+            colors={colors}
+            chartWidth={900}
+            chartHeight={430}
+            sort= {["Republican","descending" ]}
+            chartTitle="Donation to the political Parties"
+            barsGap={0}
+            barHeight={50}
+            chartTemplate="t2"
+
           />
 
 

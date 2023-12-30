@@ -64,39 +64,56 @@ const Line = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyLine
-          data={data}
-          colors={colors}
-          xAxisTitle = "Date"
-          yAxisTitle = "Packages"
-          lineShape="curveMonotoneX"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */
-          chartTitle="Number of packages sent"
-          chartWidth={800}
-          chartHeight={500}
-          legendTitle='Lines'
-          lineAreaColor={true}
-          areaColorOpacity={0.3}
-          linesPadding={0.1}  //0.0 till 1
-          chartTemplate="t1"
-          dataPoints={5}
-          chartBorder={true}
-        />
-        <DyLine
-          data={data}
-          colors={colors}
-          xAxisTitle = "Date"
-          yAxisTitle = "Packages"
-          lineShape="curveMonotoneX"        /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */
-          chartTitle="Number of packages sent"
-          chartWidth={800}
-          chartHeight={500}
-          legendTitle='Lines'
-          lineAreaColor={true}
-          areaColorOpacity={0.0}
-          linesPadding={0.1}  //0.0 till 1
-          chartTemplate="t2"
-          dataPoints={5}
-          chartBorder={true}
-        />
+     data={data}
+     colors={colors}
+     xAxisTitle = "Date"
+     yAxisTitle = "Value"
+     lineShape="curveMonotoneX"    
+     chartTitle="Number of packages sent"
+     chartWidth={1300}
+     chartHeight={600}
+     legendTitle='Hubs'
+     lineAreaColor={true}
+     areaColorOpacity={0.1}
+     linesPadding={0.1}  //0.0 till 1
+     chartTemplate="t1"
+     dataPoints={5}
+     chartBorder={true}
+   />
+
+<DyLine
+     data={data}
+     colors={colors}
+     xAxisTitle = "Date"
+     yAxisTitle = "Value"
+     lineShape="curveMonotoneX"    
+      /* 
+     curveLinear: d3.curveLinear,
+     curveStep: d3.curveStep,
+     curveStepBefore: d3.curveStepBefore,
+     curveStepAfter: d3.curveStepAfter,
+     curveBasis: d3.curveBasis,
+ 
+     curveMonotoneX: d3.curveMonotoneX,
+     curveMonotoneY: d3.curveMonotoneY,
+ 
+     curveNatural: d3.curveNatural,
+    
+     */
+     
+
+     chartTitle="Number of packages sent"
+     chartWidth={1300}
+     chartHeight={600}
+     legendTitle='Hubs'
+     lineAreaColor={true}
+     areaColorOpacity={0.0}
+     linesPadding={0.1}  //0.0 till 1
+     chartTemplate="t2"
+     dataPoints={5}
+     chartBorder={true}
+   />
+
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

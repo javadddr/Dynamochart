@@ -4,13 +4,21 @@
 .mainchartsBar{
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+
   
 }
 
 .mainchartsBar1{
   display: flex;
   justify-content: space-evenly;
+ 
+  
+}
+.mainchartsBar1y{
+  display: flex;
+  justify-content: space-evenly;
+  width: 99%;
+  margin-left: 5px;
   
 }
 

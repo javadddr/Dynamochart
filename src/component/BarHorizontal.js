@@ -85,9 +85,9 @@ const BarHorizontal = () => {
         gridNumber={5}
         gridColor="green"
         sort='n'  //az,za,n
-        barHeight = {60}
+        barHeight = {30}
         spacingBetweenBars = {10}
-        cWidth = {500}
+        cWidth = {700}
         margin={{ left: 170, right: 60, top: 60, bottom: 40 }}
         barBorderRadius={2}
         template='t1'
@@ -109,9 +109,9 @@ const BarHorizontal = () => {
         gridNumber={3}
         gridColor="green"
         sort='n'  //az,za,n
-        barHeight = {60}
+        barHeight = {50}
         spacingBetweenBars = {10}
-        cWidth = {500}
+        cWidth = {700}
         margin={{ left: 170, right: 60, top: 60, bottom: 40 }}
         barBorderRadius={2}
         template='t2'

@@ -73,7 +73,7 @@ const Calendar = () => {
 
   return (
     <div className="mainchartsBar">
-        <div className="mainchartsBar1">
+        <div className="mainchartsBar12">
         <DyCalendar 
       data={data}
       colors={colors}    ///either use colors or chartColor

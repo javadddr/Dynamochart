@@ -5,7 +5,7 @@
 .mainchartsBar{
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+ 
   
 }
 
@@ -14,6 +14,12 @@
   justify-content: space-evenly;
   margin-bottom: 30px;
   
+}
+.mainchartsBar12{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  height: 900px;
 }
 
 .sampleCodebar {

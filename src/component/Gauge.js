@@ -53,18 +53,19 @@ const Gauge = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyGauge 
-        data={data} 
-        target={1100} 
-        title={'Customers terminated by cx '} 
-        strokeWidth={110} 
-        segment="date"
-        legendTitle="CX employees"
-        chartWidth={700}
-        chartHeight={450}
-        radius={290}
-        padding={{top:20,left:40,right:10,bottom:10}}
-        margin={{top:10,left:10,right:10,bottom:10}}
-        /> 
+          data={data} 
+          target={1100} 
+          title={'Customers terminated by cx '} 
+          strokeWidth={130} 
+          segment="date"
+          legendTitle="CX employees"
+          chartWidth={800}
+          chartHeight={500}
+          radius={300}
+          padding={{top:20,left:40,right:0,bottom:10}}
+          margin={{top:10,left:10,right:10,bottom:10}}
+          />
+
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

@@ -74,31 +74,33 @@ const Funnel = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyFunnel
-          data={data}
-          colors={colors}
-          showLegend={true}
-          funnelValues={true}
-          chartWiedth = {800}
-          chartHeight = {420}
-          chartTitle="Marketing Funnel Chart"
-          chartTitleFontSize={22}
-          showSmall={7}
-          chartDecimals={0}
-          chartTemplate="t1"
+       data={data}
+       colors={colors}
+       showLegend={true}
+       funnelValues={true}
+       chartWiedth = {1100}
+       chartHeight = {520}
+       chartTitle="Marketing Funnel Chart"
+       chartTitleFontSize={22}
+       showSmall={7}
+       chartDecimals={0}
+       chartTemplate="t1"
        />
-        <DyFunnel
-          data={data}
-          colors={colors}
-          showLegend={true}
-          funnelValues={true}
-          chartWiedth = {800}
-          chartHeight = {420}
-          chartTitle="Marketing Funnel Chart"
-          chartTitleFontSize={22}
-          showSmall={7}
-          chartDecimals={0}
-          chartTemplate="t2"
+
+<DyFunnel
+       data={data}
+       colors={colors}
+       showLegend={true}
+       funnelValues={true}
+       chartWiedth = {1100}
+       chartHeight = {520}
+       chartTitle="Marketing Funnel Chart"
+       chartTitleFontSize={22}
+       showSmall={7}
+       chartDecimals={0}
+       chartTemplate="t2"
        />
+
 
         </div>
         <div className="mainchartsBar2">

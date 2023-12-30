@@ -76,8 +76,8 @@ const Stack = () => {
             sort = 'n' //az , za,n
             chartPadding = {{ top: 50, right: 10, bottom: 20, left: 0 }}
             chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
-            chartWidth = {550}
-            chartHeight = {300}
+            chartWidth = {900}
+            chartHeight = {350}
             gap = {20}
             xAxis = 'name'
             xAxisTitle='Hubs'
@@ -94,10 +94,10 @@ const Stack = () => {
             { label: 'Adding First Empoloyee', position: 35, marginTop:18.5,height:60, style:'solid'},
             { label: 'Adding second Empoloyee', position:375, marginTop:18.5,height:60, style:'dashed' },
             ]}
-            chartPadding = {{ top: 50, right: 120, bottom: 20, left: 0 }}
+            chartPadding = {{ top: 50, right: 10, bottom: 20, left: 0 }}
             chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
-            chartWidth = {550}
-            chartHeight = {300}
+            chartWidth = {900}
+            chartHeight = {350}
             gap = {20}
             xAxis = 'name'
             xAxisTitle='Hubs'

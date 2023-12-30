@@ -85,33 +85,48 @@ const DateLine = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <DyLineDate
-            data={data}
-            xAxis="date"
-            yAxis="value"
-            dateFilter={true}
-            useAreaTop={true}
-            useArea={true}
-            YAxisTitle='Utilisation'
-            XAxisTitle='Date'
-             useAreaColor='#76B7B2' //WHE TEMPLE IS T2 YOU NEED TO TRUN THIS OFF
-            defaulPeriod='Daily'
-            defaulFunctionType='Sum'
-            circleRadius={3}
-            circleColor="black" ///just works when it is t1
-            chartWidth={700}
-            chartHeight={400}
-            margin = {{ top: 90, right: 70, bottom: 90, left: 110 }}
-            startFrom={0.2}
-            xAxisValueFont={15}
-            yAxisValueFont={15}
-            yAxisTitleFont={15}
-            xAxisTitleFont={15}
-            chartValueFont={14}
-            chartTitleFont={19}
-            template="t1"
-            chartTitle="Utilisation vs Date"
-            lineShape="curveNatural"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */  
-          />
+     data={data}
+     xAxis="date"
+     yAxis="value"
+     dateFilter={true}
+     useAreaTop={true}
+     useArea={true}
+     YAxisTitle='Utilisation'
+     XAxisTitle='Date'
+     useAreaColor='#E15759' //WHE TEMPLE IS T2 YOU NEED TO TRUN THIS OFF
+     defaulPeriod='Daily'
+     defaulFunctionType='Sum'
+     circleRadius={4}
+     circleColor="black" ///just works when it is t1
+     chartWidth={1000}
+     chartHeight={500}
+     margin = {{ top: 90, right: 70, bottom: 90, left: 110 }}
+     startFrom={0.3}
+    xAxisValueFont={14}
+    yAxisValueFont={14}
+    yAxisTitleFont={15}
+    xAxisTitleFont={15}
+    chartValueFont={14}
+    chartTitleFont={19}
+    template="t1"
+    lineShape="curveNatural"    
+      /* 
+     curveLinear: d3.curveLinear,
+     curveStep: d3.curveStep,
+     curveStepBefore: d3.curveStepBefore,
+     curveStepAfter: d3.curveStepAfter,
+     curveBasis: d3.curveBasis,
+ 
+     curveMonotoneX: d3.curveMonotoneX,
+     curveMonotoneY: d3.curveMonotoneY,
+
+     curveNatural: d3.curveNatural,
+     */
+
+   
+   />
+ 
+       
         <DyLineDate
             data={data}
             xAxis="date"
@@ -121,13 +136,13 @@ const DateLine = () => {
             useArea={true}
             YAxisTitle='Utilisation'
             XAxisTitle='Date'
-             useAreaColor='#FF6384' //WHE TEMPLE IS T2 YOU NEED TO TRUN THIS OFF
+             useAreaColor='#C07124' //WHE TEMPLE IS T2 YOU NEED TO TRUN THIS OFF
             defaulPeriod='Daily'
             defaulFunctionType='Sum'
             circleRadius={3}
             circleColor="black" ///just works when it is t1
-            chartWidth={700}
-            chartHeight={400}
+            chartWidth={1000}
+            chartHeight={500}
             margin = {{ top: 90, right: 70, bottom: 90, left: 110 }}
             startFrom={0.2}
             xAxisValueFont={15}
@@ -138,7 +153,7 @@ const DateLine = () => {
             chartTitleFont={19}
             chartTitle="Utilisation vs Date"
             template="t2"
-            lineShape="curveNatural"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */  
+            lineShape="curveStepBefore"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */  
           />
 
 

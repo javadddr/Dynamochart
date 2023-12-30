@@ -68,7 +68,7 @@ const StackVertica = () => {
     data={data}
     colors={colors}
     valueDisplayPosition = 'top'
-    chartWidth = {600}
+    chartWidth = {700}
     chartHeight = {350}
     chartPadding = {{ top: 90, right: 130, bottom: 10, left: 110 }}
     chartMargin= {{ top: 40, right: 0, bottom: 0, left: 5 }}
@@ -82,8 +82,8 @@ const StackVertica = () => {
     data={data}
     colors={colors}
     valueDisplayPosition = 'middle'
-    chartWidth = {600}
-    chartHeight = {350}
+    chartWidth = {700}
+    chartHeight = {450}
     chartPadding = {{ top: 90, right: 130, bottom: 10, left: 110 }}
     chartMargin= {{ top: 40, right: 0, bottom: 0, left: 5 }}
     gridNumber={5}

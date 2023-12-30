@@ -52,6 +52,7 @@ const Samples = () => {
 
   
   return (
+    <div>
     <div className="samples-container">
       <div className="sidebar">
         {pages.map(page => (
@@ -68,6 +69,10 @@ const Samples = () => {
       <SamplePage activePageId={activePageId} />
       </div>
            
+      </div>
+      <div className="samples-desktop">
+        Please view this page on desktop
+      </div>
       </div>
     
   );

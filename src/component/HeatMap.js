@@ -83,6 +83,24 @@ const HeatMap = () => {
           colorValues="black"
    
         />
+         <DyHeatMap
+          chartData={data}
+          colors={colors}
+          yAxis="Channel"
+          xAxis="Date"
+          yAxisTitle="Categories"
+          xAxisTitle="Date"
+          value={["Facebook", "Google","Insta"]}
+          calculate="sum"
+          chartWidth={1300}
+          chartHeight={600}
+          chartTitle="Conversion Rate "
+          xAxisRotate={0}
+          chartTemplate="t2"
+          fontValues={14}
+          colorValues="black"
+   
+        />
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

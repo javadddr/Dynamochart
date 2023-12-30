@@ -122,8 +122,8 @@ const Bar = () => {
             // yAxisLabelV={50}
           
             showTooltip = {true}
-            cWidth = {700}
-            cHeight = {500}
+            cWidth = {1100}
+            cHeight = {600}
             chartPadding={{ top: 110, right: 80, bottom: 150, left: 110 }}
             template='t1'
             chartBorder={10}  //border redius
@@ -169,8 +169,8 @@ const Bar = () => {
             // yAxisLabelV={50}
           
             showTooltip = {true}
-            cWidth = {700}
-            cHeight = {500}
+            cWidth = {1100}
+            cHeight = {600}
             chartPadding={{ top: 110, right: 80, bottom: 150, left: 110 }}
             template='t2'
             chartBorder={10}  //border redius
