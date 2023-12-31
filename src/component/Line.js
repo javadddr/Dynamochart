@@ -70,8 +70,8 @@ const Line = () => {
      yAxisTitle = "Value"
      lineShape="curveMonotoneX"    
      chartTitle="Number of packages sent"
-     chartWidth={1300}
-     chartHeight={600}
+     chartWidth={900}
+     chartHeight={500}
      legendTitle='Hubs'
      lineAreaColor={true}
      areaColorOpacity={0.1}
@@ -103,8 +103,8 @@ const Line = () => {
      
 
      chartTitle="Number of packages sent"
-     chartWidth={1300}
-     chartHeight={600}
+     chartWidth={900}
+     chartHeight={500}
      legendTitle='Hubs'
      lineAreaColor={true}
      areaColorOpacity={0.0}

@@ -88,8 +88,8 @@ const BarHorizontal = () => {
         sort='n'  //az,za,n
         barHeight = {30}
         spacingBetweenBars = {10}
-        cWidth = {700}
-        margin={{ left: 170, right: 60, top: 60, bottom: 40 }}
+        cWidth = {600}
+        margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
         barBorderRadius={2}
         template='t1'
       />
@@ -114,8 +114,8 @@ const BarHorizontal = () => {
         sort='n'  //az,za,n
         barHeight = {50}
         spacingBetweenBars = {10}
-        cWidth = {700}
-        margin={{ left: 170, right: 60, top: 60, bottom: 40 }}
+        cWidth = {600}
+        margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
         barBorderRadius={2}
         template='t2'
       />
