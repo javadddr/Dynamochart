@@ -2,7 +2,7 @@
 
 import {DyCalendar} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Calendar = () => {
 
@@ -73,7 +73,8 @@ const Calendar = () => {
 
   return (
     <div className="mainchartsBar">
-        <div className="mainchartsBar12">
+        <div className="mainchartsBar1">
+        <div className="mainchartsBaroooho">
         <DyCalendar 
       data={data}
       colors={colors}    ///either use colors or chartColor
@@ -83,10 +84,13 @@ const Calendar = () => {
       showLabel={true}
       labelColor="#ffa8a8"
       showSummery={true}
-      chartWidth={1300}
-      chartHeight={700}
+      chartWidth={1100}
+      chartHeight={600}
+      defaultMonth="november"
       />
 
+    </div>
+     
 
         </div>
         <div className="mainchartsBar2">

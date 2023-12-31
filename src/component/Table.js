@@ -1,7 +1,7 @@
 
 
 import {DyTable} from "dynamochart";
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Table = () => {
   const rows = [
@@ -83,6 +83,7 @@ const Table = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyTable 
         rows={rows}
         colors={colors}
@@ -92,7 +93,9 @@ const Table = () => {
         showSearch={true}
         tableTemplate="t1" 
       />
-
+       </div>
+     <div className="mainchartsBarooo">
+      
 <DyTable 
         rows={rows}
         colors={colors}
@@ -102,7 +105,7 @@ const Table = () => {
         showSearch={true}
         tableTemplate="t2" 
       />
-
+</div>
 
 
         </div>

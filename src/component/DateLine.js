@@ -2,7 +2,7 @@
 
 import {DyLineDate} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const DateLine = () => {
 
@@ -84,6 +84,7 @@ const DateLine = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyLineDate
      data={data}
      xAxis="date"
@@ -126,7 +127,8 @@ const DateLine = () => {
    
    />
  
-       
+ </div>
+     <div className="mainchartsBarooo">
         <DyLineDate
             data={data}
             xAxis="date"
@@ -156,7 +158,7 @@ const DateLine = () => {
             lineShape="curveStepBefore"    /* curveLinear,curveStep,curveStepBefore,curveStepAfter,curveBasis,curveMonotoneX,curveMonotoneY,curveNatural  */  
           />
 
-
+</div>
 
 
         </div>

@@ -1,7 +1,7 @@
 
 import {DyHeatMap} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const HeatMap = () => {
   const data = [
@@ -65,6 +65,7 @@ const HeatMap = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBaroooh">
         <DyHeatMap
           chartData={data}
           colors={colors}
@@ -74,8 +75,8 @@ const HeatMap = () => {
           xAxisTitle="Date"
           value={["Facebook", "Google","Insta"]}
           calculate="sum"
-          chartWidth={1300}
-          chartHeight={600}
+          chartWidth={1000}
+          chartHeight={400}
           chartTitle="Conversion Rate "
           xAxisRotate={0}
           chartTemplate="t1"
@@ -83,6 +84,8 @@ const HeatMap = () => {
           colorValues="black"
    
         />
+    </div>
+     <div className="mainchartsBaroooh">
          <DyHeatMap
           chartData={data}
           colors={colors}
@@ -92,8 +95,8 @@ const HeatMap = () => {
           xAxisTitle="Date"
           value={["Facebook", "Google","Insta"]}
           calculate="sum"
-          chartWidth={1300}
-          chartHeight={600}
+          chartWidth={1000}
+          chartHeight={400}
           chartTitle="Conversion Rate "
           xAxisRotate={0}
           chartTemplate="t2"
@@ -101,6 +104,7 @@ const HeatMap = () => {
           colorValues="black"
    
         />
+  </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

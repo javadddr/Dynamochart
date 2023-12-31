@@ -2,7 +2,7 @@
 import {DySideStackChart} from "dynamochart"
 
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const StackVertica = () => {
 
@@ -64,6 +64,7 @@ const StackVertica = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DySideStackChart
     data={data}
     colors={colors}
@@ -79,6 +80,8 @@ const StackVertica = () => {
     chartTitle="Utilisation of each line"
     showLegend={true}
     />
+        </div>
+     <div className="mainchartsBarooo">
      <DySideStackChart
     data={data}
     colors={colors}
@@ -93,7 +96,7 @@ const StackVertica = () => {
     template='t2'
     chartTitle="Utilisation of each line"
     />
-
+  </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

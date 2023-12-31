@@ -1,7 +1,7 @@
 
 import {DyGauge} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Gauge = () => {
   const data = [
@@ -52,6 +52,23 @@ const Gauge = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
+          
+        <DyGauge 
+          data={data} 
+          target={1100} 
+          title={'Customers terminated by cx '} 
+          strokeWidth={130} 
+          segment="label"
+          legendTitle="CX employees"
+          chartWidth={800}
+          chartHeight={500}
+          radius={300}
+          padding={{top:20,left:40,right:0,bottom:10}}
+          margin={{top:10,left:10,right:10,bottom:10}}
+          />
+ </div>
+     <div className="mainchartsBarooo">
         <DyGauge 
           data={data} 
           target={1100} 
@@ -65,7 +82,7 @@ const Gauge = () => {
           padding={{top:20,left:40,right:0,bottom:10}}
           margin={{top:10,left:10,right:10,bottom:10}}
           />
-
+ </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

@@ -2,32 +2,32 @@
 
 
 import {DyYearCalender} from "dynamochart";
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const YearCalender = () => {
   const data = [
-    { date: '2023-01-17', value: 10 },
-    { date: '2023-02-01', value: 10 },
-    { date: '2023-02-5', value: -5 },
-    { date: '2023-02-15', value: 2 },
-    { date: '2023-02-20', value: 1.5},
-    { date: '2023-02-20', value: 2.5},
-    { date: '2023-03-01', value: 10 },
-    { date: '2023-03-25', value: -5 },
-    { date: '2023-03-15', value: 2 },
-    { date: '2023-04-10', value: 1.5},
-    { date: '2023-04-13', value: 2.5},
-    { date: '2023-05-01', value: 10 },
-    { date: '2023-05-25', value: -5 },
-    { date: '2023-05-15', value: 2 },
-    { date: '2023-05-10', value: 1.5},
-    { date: '2023-05-23', value: 2.5},
-    { date: '2023-06-01', value: 10 },
-    { date: '2023-06-25', value: -5 },
-    { date: '2023-07-15', value: 2 },
-    { date: '2023-08-10', value: 1.5},
-    { date: '2023-09-10', value: 2.5},
-    { date: '2023-11-25', value: 20.5},
+    { date: '2024-01-17', value: 10 },
+    { date: '2024-02-01', value: 10 },
+    { date: '2024-02-5', value: -5 },
+    { date: '2024-02-15', value: 2 },
+    { date: '2024-02-20', value: 1.5},
+    { date: '2024-02-20', value: 2.5},
+    { date: '2024-03-01', value: 10 },
+    { date: '2024-03-25', value: -5 },
+    { date: '2024-03-15', value: 2 },
+    { date: '2024-04-10', value: 1.5},
+    { date: '2024-04-13', value: 2.5},
+    { date: '2024-05-01', value: 10 },
+    { date: '2024-05-25', value: -5 },
+    { date: '2024-05-15', value: 2 },
+    { date: '2024-05-10', value: 1.5},
+    { date: '2024-05-23', value: 2.5},
+    { date: '2024-06-01', value: 10 },
+    { date: '2024-06-25', value: -5 },
+    { date: '2024-07-15', value: 2 },
+    { date: '2024-08-10', value: 1.5},
+    { date: '2024-09-10', value: 2.5},
+    { date: '2024-11-25', value: 20.5},
   ];
 
 
@@ -35,28 +35,28 @@ const YearCalender = () => {
   import {DyYearCalender} from 'dynamochart';
 
   const data = [
-    { date: '2023-01-17', value: 10 },
-    { date: '2023-02-01', value: 10 },
-    { date: '2023-02-5', value: -5 },
-    { date: '2023-02-15', value: 2 },
-    { date: '2023-02-20', value: 1.5},
-    { date: '2023-02-20', value: 2.5},
-    { date: '2023-03-01', value: 10 },
-    { date: '2023-03-25', value: -5 },
-    { date: '2023-03-15', value: 2 },
-    { date: '2023-04-10', value: 1.5},
-    { date: '2023-04-13', value: 2.5},
-    { date: '2023-05-01', value: 10 },
-    { date: '2023-05-25', value: -5 },
-    { date: '2023-05-15', value: 2 },
-    { date: '2023-05-10', value: 1.5},
-    { date: '2023-05-23', value: 2.5},
-    { date: '2023-06-01', value: 10 },
-    { date: '2023-06-25', value: -5 },
-    { date: '2023-07-15', value: 2 },
-    { date: '2023-08-10', value: 1.5},
-    { date: '2023-09-10', value: 2.5},
-    { date: '2023-11-25', value: 20.5},
+    { date: '2024-01-17', value: 10 },
+    { date: '2024-02-01', value: 10 },
+    { date: '2024-02-5', value: -5 },
+    { date: '2024-02-15', value: 2 },
+    { date: '2024-02-20', value: 1.5},
+    { date: '2024-02-20', value: 2.5},
+    { date: '2024-03-01', value: 10 },
+    { date: '2024-03-25', value: -5 },
+    { date: '2024-03-15', value: 2 },
+    { date: '2024-04-10', value: 1.5},
+    { date: '2024-04-13', value: 2.5},
+    { date: '2024-05-01', value: 10 },
+    { date: '2024-05-25', value: -5 },
+    { date: '2024-05-15', value: 2 },
+    { date: '2024-05-10', value: 1.5},
+    { date: '2024-05-23', value: 2.5},
+    { date: '2024-06-01', value: 10 },
+    { date: '2024-06-25', value: -5 },
+    { date: '2024-07-15', value: 2 },
+    { date: '2024-08-10', value: 1.5},
+    { date: '2024-09-10', value: 2.5},
+    { date: '2024-11-25', value: 20.5},
   ];
   
     return (
@@ -82,15 +82,14 @@ const YearCalender = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1y">
         <DyYearCalender 
-            data={data}
-            chartWidth={1600}
-            chartHeight={500}
-            calculation="sum"   //average , max, min, sum
-            startMonth={1}   ///start from 1
-            monthsNumber={12}
-            chartPadding={6}   ////0-6 also decimals
-            chartColor="#2cfc03"
-                  />
+     data={data}
+     chartWidth={1100}
+     calculation="sum"    //average , max, min, sum
+     startMonth={1}       //start from 1
+     monthsNumber={12}    // Number of months to display
+     chartColor="#ffefbc" //The color of the values
+      />
+
 
 
         </div>

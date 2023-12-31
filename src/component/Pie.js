@@ -2,7 +2,7 @@
 
 
 import {DyPie} from "dynamochart";
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Pie = () => {
   const data = [
@@ -60,6 +60,7 @@ const Pie = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyPie
         data={data}
         colors={colors}
@@ -76,6 +77,8 @@ const Pie = () => {
         strokeWidth="0"
         chartTemplate="t1"
       />
+       </div>
+     <div className="mainchartsBarooo">
       <DyPie
         data={data}
         colors={colors}
@@ -92,7 +95,7 @@ const Pie = () => {
         strokeWidth="0"
         chartTemplate="t2"
       />
-
+</div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

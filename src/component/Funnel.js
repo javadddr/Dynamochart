@@ -1,7 +1,7 @@
 
 import {DyFunnel} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Funnel = () => {
   const data = [
@@ -73,6 +73,7 @@ const Funnel = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyFunnel
        data={data}
        colors={colors}
@@ -86,7 +87,8 @@ const Funnel = () => {
        chartDecimals={0}
        chartTemplate="t1"
        />
-
+ </div>
+     <div className="mainchartsBarooo">
 <DyFunnel
        data={data}
        colors={colors}
@@ -101,7 +103,7 @@ const Funnel = () => {
        chartTemplate="t2"
        />
 
-
+</div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

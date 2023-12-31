@@ -2,7 +2,7 @@
 import {DyStackChart} from "dynamochart";
 
 
-import "./Stack.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Stack = () => {
 
@@ -70,6 +70,7 @@ const Stack = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyStackChart 
             initialData={data} 
             colors={colors} 
@@ -86,6 +87,8 @@ const Stack = () => {
             template='t1'
             chartTitle='Performance vs Hubs'
               />
+               </div>
+     <div className="mainchartsBarooo">
         <DyStackChart 
             initialData={data} 
             colors={colors} 
@@ -106,7 +109,7 @@ const Stack = () => {
             template='t2'
             chartTitle='Performance vs Hubs'
               />
-
+ </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

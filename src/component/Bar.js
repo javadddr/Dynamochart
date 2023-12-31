@@ -88,6 +88,7 @@ const Bar = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+          <div className="mainchartsBarooo">
         <DyBar
             data={data}
             xAxis="name"
@@ -135,6 +136,8 @@ const Bar = () => {
             hoverColor="#E6E3E3"
           
           />
+           </div>
+     <div className="mainchartsBarooo">
         <DyBar
             data={data}
             xAxis="name"
@@ -182,16 +185,16 @@ const Bar = () => {
             hoverColor="#E6E3E3"
           
           />
+          </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">
-        <h2>Chart Code</h2>
-          <div className="sampleCodebar">
-         
+          <h2>Chart Code</h2>
+           <div className="sampleCodebar">
             <SyntaxHighlighter language="javascript" >
               {codeString1}
             </SyntaxHighlighter>
-          </div>
+           </div>
           </div>
         
           <div class="props-container">

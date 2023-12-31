@@ -1,7 +1,7 @@
 
 
 import {DyBarHorizontal} from "dynamochart";
-import "./BarHorizontal.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const BarHorizontal = () => {
 
@@ -68,6 +68,7 @@ const BarHorizontal = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyBarHorizontal
         data={data}
         xAxis='Shipments'
@@ -92,6 +93,8 @@ const BarHorizontal = () => {
         barBorderRadius={2}
         template='t1'
       />
+     </div>
+     <div className="mainchartsBarooo">
  <DyBarHorizontal
         data={data}
         xAxis='Shipments'
@@ -116,7 +119,7 @@ const BarHorizontal = () => {
         barBorderRadius={2}
         template='t2'
       />
-
+  </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

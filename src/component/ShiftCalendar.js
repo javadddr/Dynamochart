@@ -2,7 +2,7 @@
 
 import {DyShiftCalendar} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const ShiftCalendar  = () => {
 
@@ -75,15 +75,18 @@ const ShiftCalendar  = () => {
   return (
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
+        <div className="mainchartsBarooo">
         <DyShiftCalendar 
-          data={data}
-          colors={colors}
-          chartWidth={1500}
-          chartHeight={400}
-          holidays={{first:0,second:1}} // Sunday (0) and Saturday (6) are weekend days
-          holidaysColor= 'rgb(255, 250, 226)'
-          theme="t1"
-          />
+     data={data}
+     colors={colors}
+     chartWidth={1200}
+     chartHeight={400}
+     holidays={{first:0,second:1}} // Sunday (0) and Saturday (6) are weekend days
+     holidaysColor= 'rgb(255, 250, 226)'
+     theme="t1"
+     defaultMonth="november"
+     />
+ </div>
         </div>
         <div className="mainchartsBar2">
         <div class="props-container">

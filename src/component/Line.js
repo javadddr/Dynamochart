@@ -1,7 +1,7 @@
 
 import {DyLine} from "dynamochart";
 
-import "./StackVertica.css"
+import "./Bar.css"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const Line = () => {
   const data = [
