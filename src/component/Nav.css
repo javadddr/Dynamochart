@@ -39,7 +39,7 @@
  width: 120px;
   border-radius: 6px;
 font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }
@@ -87,7 +87,7 @@ font-size: 18px;
  width: 120px;
   border-radius: 6px;
 font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }
@@ -133,7 +133,7 @@ font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  width: 120px;
   border-radius: 8px;
   font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }
