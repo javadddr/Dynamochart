@@ -65,7 +65,13 @@
   color: #2ca9a1;
   text-decoration: underline;
 }
-
+.justloagb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 @media (max-width: 1100px) {
   .footer {
     flex-direction: column;
