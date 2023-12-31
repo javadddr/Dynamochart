@@ -74,7 +74,7 @@ const Stack = () => {
             initialData={data} 
             colors={colors} 
             sort = 'n' //az , za,n
-            chartPadding = {{ top: 50, right: 10, bottom: 20, left: 0 }}
+            chartPadding = {{ top: 0, right: 0, bottom: 0, left: 0 }}
             chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
             chartWidth = {900}
             chartHeight = {350}
@@ -94,7 +94,7 @@ const Stack = () => {
             { label: 'Adding First Empoloyee', position: 35, marginTop:18.5,height:60, style:'solid'},
             { label: 'Adding second Empoloyee', position:375, marginTop:18.5,height:60, style:'dashed' },
             ]}
-            chartPadding = {{ top: 50, right: 10, bottom: 20, left: 0 }}
+            chartPadding = {{ top: 0, right: 0, bottom: 0, left: 0 }}
             chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
             chartWidth = {900}
             chartHeight = {350}

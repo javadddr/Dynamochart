@@ -77,6 +77,7 @@ const StackVertica = () => {
     yAxis='Utilisation'
     template='t1'
     chartTitle="Utilisation of each line"
+    showLegend={true}
     />
      <DySideStackChart
     data={data}
