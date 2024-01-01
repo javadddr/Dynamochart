@@ -86,7 +86,7 @@ const Calendar = () => {
       showSummery={true}
       chartWidth={1100}
       chartHeight={600}
-      defaultMonth="november"
+      defaultMonth="november-2023"
       />
 
     </div>

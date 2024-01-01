@@ -84,7 +84,7 @@ const ShiftCalendar  = () => {
      holidays={{first:0,second:1}} // Sunday (0) and Saturday (6) are weekend days
      holidaysColor= 'rgb(255, 250, 226)'
      theme="t1"
-     defaultMonth="november"
+     defaultMonth="november-2023"
      />
  </div>
         </div>
