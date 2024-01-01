@@ -30,6 +30,20 @@ const GetStarted = () => {
 
   return (
     <div className="get-started">
+        <div className='codevideo21'>
+          <div className='jusiframe1'>
+        <iframe 
+                width="1550" 
+                height="778" 
+                src="https://www.youtube.com/embed/apSxoJyoTto?si=6Iyjk5V26h3T6kLD" 
+                title="YouTube video player" 
+              
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+              </div>
+             
+          </div>
      <div className='firststepback'>
       <div className="step">
         <div className='stepotitleget'>
@@ -186,20 +200,7 @@ const GetStarted = () => {
   Visit the <Link to="/samples" className='linkforlearningdd'>  View Sample </Link> page to understand the data structure required for each chart type.
 </div>
 
-      <div className='codevideo21'>
-          <div className='jusiframe1'>
-        <iframe 
-                width="850" 
-                height="478" 
-                src="https://www.youtube.com/embed/8C9QLHS9FkM" 
-                title="YouTube video player" 
-              
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen>
-              </iframe>
-              </div>
-             
-          </div>
+    
         </div>
     </div>
   );
