@@ -79,8 +79,8 @@ const Funnel = () => {
        colors={colors}
        showLegend={true}
        funnelValues={true}
-       chartWiedth = {1100}
-       chartHeight = {520}
+       chartWiedth = {800}
+       chartHeight = {350}
        chartTitle="Marketing Funnel Chart"
        chartTitleFontSize={22}
        showSmall={7}
@@ -94,8 +94,8 @@ const Funnel = () => {
        colors={colors}
        showLegend={true}
        funnelValues={true}
-       chartWiedth = {1100}
-       chartHeight = {520}
+       chartWiedth = {800}
+       chartHeight = {350}
        chartTitle="Marketing Funnel Chart"
        chartTitleFontSize={22}
        showSmall={7}

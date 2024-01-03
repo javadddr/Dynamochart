@@ -79,8 +79,8 @@ const ShiftCalendar  = () => {
         <DyShiftCalendar 
      data={data}
      colors={colors}
-     chartWidth={1200}
-     chartHeight={400}
+     chartWidth={1000}
+     chartHeight={330}
      holidays={{first:0,second:1}} // Sunday (0) and Saturday (6) are weekend days
      holidaysColor= 'rgb(255, 250, 226)'
      theme="t1"

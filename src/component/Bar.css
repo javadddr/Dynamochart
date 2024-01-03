@@ -19,12 +19,16 @@
 }
 .mainchartsBarooo{
   margin-bottom: 20px;
+  align-items: center;
 }
 .mainchartsBaroooh{
   margin-bottom: 60px;
 }
 .mainchartsBaroooho{
   margin-bottom: 260px;
+}
+.mainchartsBarooocc{
+  margin-top: 160px;
 }
 .dybar-chart{
   border: 1px solid black;
@@ -153,5 +157,91 @@
 }
 
 
+.label-shifti{
+  font-size: 13px !important;
+}
+.empty-square-shifti,.calendar-day-shifti,.legend-shifti-text,.day-name-shifti{
+  font-size: 13px !important;
+}
+.calendar-day-shifti, .empty-square-shifti, .day-name-shifti {
+  width: 3.33% !important;
+  height: 23px !important;
+}
+.dy-table th, .dy-table td {
+  padding: 13px 18px !important;
+  text-align: left !important;
+  border-bottom: 1px solid #E0E0E0 !important;
+  font-size: 14px !important;
+}
+.content-detailporxs span{
+  font-size: 14px !important;
+}
+.search-section button{
+  font-size: 13px !important;
+}
+.export-button button{
+  font-size: 13px !important;
+}
 
+.name-daydc{
+  font-size: 13px !important;
+}
+.hour-daydc{
+  font-size: 11px !important;
+  width: 33px !important;
+  height: 20px !important;
+}
+.legend-daygh-text{
+  font-size: 13px !important;
+}
+.calendar-header-daydc h2{
+  font-size: 19px !important;
+}
+.button-85 {
+  padding: 7px 7px !important;
+}
+.number-itemopsyear {
+font-size: 13px !important;
+  width: 27px !important;
+  height: 10px !important;
+}
+.calendar-bodyfoo{
+ 
+  max-height: 30% !important;
+ 
+}
+.calendar-day{
+  font-size: 13px !important;
+}
+.calendar-bodyfoo div {
+  min-height: 20px !important;
+}
+.calendar-day{
+  height: 20px !important;
+}
+/* .calendar-bodyfoo */
+.prev-datesopsyear{
+  height: 10px !important;
+}
+.calendaropyear{
+  height: 500px !important;
+}
+.calendar-month-label{
+  font-size: 16px !important;
+}
+.calendar-year-label{
+  font-size: 25px !important;
+}
+.valuemain-titan{
+  font-size: 13px !important;
+}
+.value-titan{
+  font-size: 10px !important;
+}
+.calendar-day-titan span{
+  font-size: 8px !important;
+}
+.custom-scroll{
 
+justify-content: flex-start !important;
+}

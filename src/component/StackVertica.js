@@ -7,11 +7,11 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 const StackVertica = () => {
 
   const data = [
-    { label: 'group A', value: { one: 70, two: 61, three: 55 }},
-    { label: 'group C', value: { one: 110, two: 85, three: 120 }},
-    { label: 'group D', value: { one: 59, two: 25, three: 67 }},
-    { label: 'group p', value: { one: 92, two: 36, three: 26  }},
-    { label: 'group k', value: { one: 61, two: 65, three: 48 }},
+    { label: 'Group A', value: { One: 70, Two: 61, Three: 55 }},
+    { label: 'Group C', value: { One: 110, Two: 85, Three: 120 }},
+    { label: 'Group D', value: { One: 59, Two: 25, Three: 67 }},
+    { label: 'Group p', value: { One: 92, Two: 36, Three: 26  }},
+    { label: 'Group k', value: { One: 61, Two: 65, Three: 48 }},
    
   ];
 
@@ -26,11 +26,11 @@ const StackVertica = () => {
   const App = () => {
   
     const data = [
-      { label: 'group A', value: { one: 70, two: 61, three: 55 }},
-      { label: 'group C', value: { one: 110, two: 85, three: 120 }},
-      { label: 'group D', value: { one: 59, two: 25, three: 67 }},
-      { label: 'group p', value: { one: 92, two: 36, three: 26  }},
-      { label: 'group k', value: { one: 61, two: 65, three: 48 }},
+      { label: 'Group A', value: { One: 70, Two: 61, Three: 55 }},
+      { label: 'Group C', value: { One: 110, Two: 85, Three: 120 }},
+      { label: 'Group D', value: { One: 59, Two: 25, Three: 67 }},
+      { label: 'Group p', value: { One: 92, Two: 36, Three: 26  }},
+      { label: 'Group k', value: { One: 61, Two: 65, Three: 48 }},
      
     ];
   
@@ -49,7 +49,7 @@ const StackVertica = () => {
         chartPadding = {{ top: 90, right: 130, bottom: 10, left: 110 }}
         chartMargin= {{ top: 40, right: 0, bottom: 0, left: 5 }}
         gridNumber={5}
-        xAxis='group'
+        xAxis='Group'
         yAxis='value'
         template='t1'
         chartTitle="Utilisation of each line"
@@ -87,7 +87,7 @@ const StackVertica = () => {
     colors={colors}
     valueDisplayPosition = 'middle'
     chartWidth = {700}
-    chartHeight = {450}
+    chartHeight = {350}
     chartPadding = {{ top: 90, right: 130, bottom: 10, left: 110 }}
     chartMargin= {{ top: 40, right: 0, bottom: 0, left: 5 }}
     gridNumber={5}

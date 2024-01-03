@@ -70,12 +70,12 @@ const PercentageBar = () => {
         <DyPercentageBar 
             data={data}
             colors={colors}
-            chartWidth={900}
-            chartHeight={430}
+            chartWidth={700}
+            chartHeight={300}
             sort= {["Republican","descending" ]}
             chartTitle="Donation to the political Parties"
-            barsGap={10}
-            barHeight={50}
+            barsGap={5}
+            barHeight={20}
             chartTemplate="t1"
 
         />
@@ -83,12 +83,12 @@ const PercentageBar = () => {
         <DyPercentageBar 
             data={data}
             colors={colors}
-            chartWidth={900}
-            chartHeight={430}
+            chartWidth={700}
+            chartHeight={300}
             sort= {["Republican","descending" ]}
             chartTitle="Donation to the political Parties"
             barsGap={0}
-            barHeight={50}
+            barHeight={30}
             chartTemplate="t2"
 
           />

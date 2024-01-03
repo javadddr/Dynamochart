@@ -75,6 +75,7 @@ const Calendar = () => {
     <div className="mainchartsBar">
         <div className="mainchartsBar1">
         <div className="mainchartsBaroooho">
+        <div className="mainchartsBarooo">
         <DyCalendar 
       data={data}
       colors={colors}    ///either use colors or chartColor
@@ -84,11 +85,26 @@ const Calendar = () => {
       showLabel={true}
       labelColor="#ffa8a8"
       showSummery={true}
-      chartWidth={1100}
-      chartHeight={600}
+      chartWidth={1000}
+      chartHeight={500}
       defaultMonth="november-2023"
       />
-
+       </div>
+     <div className="mainchartsBarooocc">
+        <DyCalendar 
+      data={data}
+      colors={colors}    ///either use colors or chartColor
+      chartColor={{red:244,green:238,blue:244,singel:false}}   
+      mode="activities" ///value  and activities
+      showAll="all"   //all,Sum,Ave,Max,Min
+      showLabel={true}
+      labelColor="#ffa8a8"
+      showSummery={true}
+      chartWidth={1200}
+      chartHeight={500}
+      defaultMonth="november-2023"
+      />
+</div>
     </div>
      
 

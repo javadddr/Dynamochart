@@ -75,8 +75,8 @@ const HeatMap = () => {
           xAxisTitle="Date"
           value={["Facebook", "Google","Insta"]}
           calculate="sum"
-          chartWidth={1000}
-          chartHeight={400}
+          chartWidth={800}
+          chartHeight={350}
           chartTitle="Conversion Rate "
           xAxisRotate={0}
           chartTemplate="t1"
@@ -95,8 +95,8 @@ const HeatMap = () => {
           xAxisTitle="Date"
           value={["Facebook", "Google","Insta"]}
           calculate="sum"
-          chartWidth={1000}
-          chartHeight={400}
+          chartWidth={800}
+          chartHeight={350}
           chartTitle="Conversion Rate "
           xAxisRotate={0}
           chartTemplate="t2"

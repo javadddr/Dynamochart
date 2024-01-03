@@ -33,8 +33,8 @@ const GetStarted = () => {
         <div className='codevideo21'>
           <div className='jusiframe1'>
         <iframe 
-                width="1550" 
-                height="778" 
+                width="1050" 
+                height="478" 
                 src="https://www.youtube.com/embed/apSxoJyoTto?si=6Iyjk5V26h3T6kLD" 
                 title="YouTube video player" 
               

@@ -14,7 +14,7 @@
 }
 
 .navbar-logodyoo{
-  width: 70%;
+  width: 60%;
  
   height: 10%;
 
@@ -36,10 +36,10 @@
   padding: 10px;
   margin: 8px;
   color: #FFFFFF;
- width: 120px;
+ width: 100px;
   border-radius: 6px;
 font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }
@@ -59,10 +59,10 @@ font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px;
   margin: 8px;
   color: #FFFFFF;
- width: 140px;
+  width: 100px;
   border-radius: 6px;
 font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 16px;
+font-size: 14px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
   
@@ -84,10 +84,10 @@ font-size: 16px;
   padding: 10px;
   margin: 8px;
   color: #FFFFFF;
- width: 120px;
+  width: 100px;
   border-radius: 6px;
 font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }
@@ -108,10 +108,10 @@ font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px;
   margin: 8px;
   color: #FFFFFF;
- width: 120px;
+  width: 100px;
   border-radius: 6px;
 font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }
@@ -130,10 +130,10 @@ font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px;
   margin: 8px;
   color: #FFFFFF;
- width: 120px;
+  width: 100px;
   border-radius: 8px;
   font-family:'inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: box-shadow 200ms ease-out;
 }

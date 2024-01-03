@@ -77,8 +77,8 @@ const Stack = () => {
             sort = 'n' //az , za,n
             chartPadding = {{ top: 0, right: 0, bottom: 0, left: 0 }}
             chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
-            chartWidth = {900}
-            chartHeight = {350}
+            chartWidth = {700}
+            chartHeight = {300}
             gap = {20}
             xAxis = 'name'
             xAxisTitle='Hubs'
@@ -99,8 +99,8 @@ const Stack = () => {
             ]}
             chartPadding = {{ top: 0, right: 0, bottom: 0, left: 0 }}
             chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
-            chartWidth = {900}
-            chartHeight = {350}
+            chartWidth = {700}
+            chartHeight = {300}
             gap = {20}
             xAxis = 'name'
             xAxisTitle='Hubs'

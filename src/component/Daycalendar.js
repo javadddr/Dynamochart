@@ -10,7 +10,7 @@ const Daycalendar = () => {
     {
       start: '2023-11-25T08:30:00.000Z',
       finish: '2023-11-25T14:50:00.000Z',
-      name: 'book',
+      name: 'Susan',
       shift: 'Morning',
     },
     {
@@ -40,7 +40,7 @@ const Daycalendar = () => {
     {
       start: '2023-11-25T10:00:00.000Z',
       finish: '2023-11-25T12:30:00.000Z',
-      name: 'MoNo',
+      name: 'Kristina',
       shift: 'Morning',
     },
     {
@@ -179,8 +179,8 @@ const Daycalendar = () => {
         <DyDaycalendar 
       data={data} 
       colors={colors}
-      chartWidth={1200}
-      chartHeight={500}
+      chartWidth={900}
+      chartHeight={370}
       from={0}
       to={24}
       weekend={[0,6]}// Sunday (0) and Saturday (6) are weekend days

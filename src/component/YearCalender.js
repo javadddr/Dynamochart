@@ -83,7 +83,7 @@ const YearCalender = () => {
         <div className="mainchartsBar1y">
         <DyYearCalender 
      data={data}
-     chartWidth={1900}
+     chartWidth={1100}
      calculation="sum"    //average , max, min, sum
      startMonth={1}       //start from 1
      monthsNumber={12}    // Number of months to display
