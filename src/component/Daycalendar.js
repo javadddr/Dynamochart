@@ -194,7 +194,7 @@ const Daycalendar = () => {
 
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -204,7 +204,7 @@ const Daycalendar = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
           <h2>DyDaycalendar Component Properties</h2>
   <ul>
     <li><strong>data:</strong> An array of data objects representing shifts or events. Each object typically includes properties like name, start and finish times, and shift type.</li>

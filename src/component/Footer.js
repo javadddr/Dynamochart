@@ -33,8 +33,8 @@ const Footer = () => {
         <h1>DynamoChart UG</h1>
         <p>Holzheimer Weg 11</p>
         <p>41464 Neuss, Deutschland</p>
-        <p>Internet: <a href="https://globalpackagetracker.com/" className="footer-link">GlobalPackageTracker.com</a></p>
-        <p>Contact: <a href="mailto:contact@globalpackagetracker.com" className="footer-link">contact@globalpackagetracker.com</a></p>
+        <p>Internet: <a href="https://DynamoChart.com/" className="footer-link">DynamoChart.com</a></p>
+        <p>Contact: <a href="mailto:Hello@DynamoChart.com" className="footer-link">Hello@DynamoChart.com</a></p>
         <p>Sitz der Gesellschaft/Registered office:<span> Neuss</span></p>
         <p>Eintragung/Commercial Register:<span> Amtsgericht Neuss HRB 23027</span></p>
         <p>VAT identification number (USt-ID):<span> DE361618143</span></p>

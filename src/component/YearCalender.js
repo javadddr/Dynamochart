@@ -94,7 +94,7 @@ const YearCalender = () => {
 
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -104,7 +104,7 @@ const YearCalender = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
           <h2>DyYearCalender Component Properties</h2>
             <ul>
               <li><strong>data:</strong> An array of data objects to be displayed on the calendar. Each object typically contains date and value properties.</li>

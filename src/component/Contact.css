@@ -178,7 +178,7 @@ font-family:'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   min-height: 200px;
   display: flex;
   border: 1px solid #e6e6e6;
-  
+  font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  
   padding-left: 10px;
   border-right: none;
@@ -189,6 +189,9 @@ font-family:'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .input41{
  border-left: none;
 }
+.input41{
+
+}
 .namei{
   display: flex;
   height: 50px;
@@ -196,6 +199,8 @@ font-family:'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   align-items: center;
   text-align: center;
   margin-left: 10px;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -209,7 +214,9 @@ font-family:'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+font-size: 18px;
+  width: 300px;
+  height: 50px;
   
 }
 

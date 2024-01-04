@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 
-import CX from "../res/cx.png";
+
 import senti  from "../res/sent.png"
 const Contact = () => {
   const [firstName, setFirstName] = useState('');
@@ -15,46 +15,48 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+  
     // Check if required fields are empty
     if (!firstName || !lastName || !email || !message) {
+      // You might want to show an error message to the user here
       return;
     }
-
+  
     setIsLoading(true);
-
+  
     // Simulating an asynchronous request to store the message
     setTimeout(() => {
-      const customerMessage = {
-        firstName,
-        lastName,
-        email,
-        phoneNumber,
-        company,
-        message,
-      };
+    const customerMessage = {
+      firstName,
+      lastName,
+      email,
+      phoneNumber,
+      company,
+      message,
+    };
       // Here you can perform your logic to store the customerMessage state
       console.log(customerMessage);
-
+  
       // Send the customerMessage as a POST request
       fetch('https://api.globalpackagetracker.com/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(customerMessage),
-      })
-        .then((response) => {
-          if (response.ok) {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(customerMessage),
+    })
+    .then((response) => {
+      if (response.ok) {
             setIsPopupVisible(true);
-          } else {
+      } else {
             console.error('Failed to send the message');
-          }
-        })
-        .catch((error) => {
-          console.error('Error occurred while sending the message:', error);
-        })
-        .finally(() => {
-          setIsLoading(false);
+      }
+    })
+    .catch((error) => {
+      console.error('Error occurred while sending the message:', error);
+    })
+    .finally(() => {
+      setIsLoading(false);
         });
 
       // Reset form fields
@@ -132,7 +134,7 @@ const Contact = () => {
                   </div>
                   <div className="form-group4">
                     <label className='namei'>MESSAGE *</label>
-                    <textarea
+                    <textarea 
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
@@ -163,7 +165,7 @@ const Contact = () => {
                     <h2 className='justflex'>
                       <span className="icon3"></span> General Support
                     </h2>
-                    <p>Contact@globalpackagetracker.com</p>
+                    <p>Hello@dynamochart.com</p>
                   </div>
                   <div className='Opening'>
                     <h2 className='justflex'>

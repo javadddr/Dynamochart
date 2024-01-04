@@ -188,7 +188,7 @@ const Bar = () => {
           </div>
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
           <h2>Chart Code</h2>
            <div className="sampleCodebar">
             <SyntaxHighlighter language="javascript" >
@@ -197,7 +197,7 @@ const Bar = () => {
            </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
               <h2>Chart Configuration Properties</h2>
               <ul>
                   <li><strong>data:</strong> This is the array of data objects that the chart will display. Each object should have keys matching the xAxis and yAxis props. Additional properties like color can be used for customizing the appearance of each bar.</li>

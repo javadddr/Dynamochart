@@ -97,7 +97,7 @@ const PercentageBar = () => {
 
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -107,7 +107,7 @@ const PercentageBar = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
     <h2>Chart Configuration Properties</h2>
     <ul>
         <li><strong>barHeight:</strong> The height of each bar in the chart, specified as a string (e.g., '30px').</li>

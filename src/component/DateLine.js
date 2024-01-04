@@ -163,7 +163,7 @@ const DateLine = () => {
 
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -173,7 +173,7 @@ const DateLine = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
     <h2>Chart Configuration Properties</h2>
     <ul>
         <li><strong>data:</strong> The dataset for the chart, usually an array of objects.</li>

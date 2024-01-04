@@ -89,7 +89,7 @@ const ShiftCalendar  = () => {
  </div>
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -99,7 +99,7 @@ const ShiftCalendar  = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
           <h2>DyShiftCalendar Component Properties</h2>
   <ul>
     <li><strong>data:</strong> The dataset for the calendar, typically an array of objects representing each data point.</li>

@@ -110,7 +110,7 @@ const Table = () => {
 
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -120,7 +120,7 @@ const Table = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
           <h2>DyTable Component Properties</h2>
             <ul>
               <li><strong>rows:</strong> Array of data objects to be displayed as rows in the table.</li>

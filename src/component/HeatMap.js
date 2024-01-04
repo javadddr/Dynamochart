@@ -107,7 +107,7 @@ const HeatMap = () => {
   </div>
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -117,7 +117,7 @@ const HeatMap = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
     <h2>Chart Configuration Properties</h2>
     <ul>
         <li><strong>chartData:</strong> Dataset for the heatmap, typically an array of objects representing each data point.</li>

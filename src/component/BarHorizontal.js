@@ -122,7 +122,7 @@ const BarHorizontal = () => {
   </div>
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -132,7 +132,7 @@ const BarHorizontal = () => {
           </div>
           </div>
         
-          <div class="props-container">
+          <div className="props-container">
     <h2>Chart Configuration Properties</h2>
     <ul>
         <li><strong>data:</strong> Array of data objects for the chart. Each object should have keys corresponding to the xAxis and yAxis props. Additional properties like 'color' can be used for customizing the appearance of the bars.</li>

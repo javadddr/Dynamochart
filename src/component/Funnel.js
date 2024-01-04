@@ -106,7 +106,7 @@ const Funnel = () => {
 </div>
         </div>
         <div className="mainchartsBar2">
-        <div class="props-container">
+        <div className="props-container">
         <h2>Chart Code</h2>
           <div className="sampleCodebar">
          
@@ -115,7 +115,7 @@ const Funnel = () => {
             </SyntaxHighlighter>
           </div>
           </div>
-          <div class="props-container">
+          <div className="props-container">
     <h2>Chart Configuration Properties</h2>
     <ul>
         <li><strong>data:</strong> Dataset for the funnel chart, typically an array of objects with value and label properties.</li>
