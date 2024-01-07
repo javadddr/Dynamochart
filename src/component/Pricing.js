@@ -8,21 +8,6 @@ import dido from "../res/checkmark.png"
 const Pricing = () => {
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div className='pmain'>
       <div className='pmain2'>
@@ -166,7 +151,7 @@ const Pricing = () => {
         </div>
         <div className='card1'>
         <div className='topnote'>
-            <h1>Enterprise</h1>
+            <h1>Custom</h1>
             <h><span> &#36;70 - &#36;150</span></h>
             </div>
        
