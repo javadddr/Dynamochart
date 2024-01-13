@@ -6,6 +6,20 @@ const Action = () => {
   return (
     <div className="action-container">
       <h2>Ready to send your data on a visualization journey?</h2>
+      <div className='codevideo21'>
+          <div className='jusiframe1'>
+        <iframe 
+                width="770" 
+                height="478" 
+                src="https://www.youtube.com/embed/pD3z9wRR6qU" 
+                title="YouTube video player" 
+              
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+              </div>
+             
+          </div>
       <div className='action-itemp'>
 
       <div className="action-item">

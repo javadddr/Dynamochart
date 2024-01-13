@@ -16,8 +16,6 @@ const Bar = () => {
  
   ];
 
-
-
   const codeString1 = `  import React from 'react'
   import {DyBar} from 'dynamochart';
 
@@ -168,9 +166,6 @@ const Bar = () => {
             barsWidth={6}
             barBorderRadius={2} // Adjust the border radius for the bars
             barBorderColor="black" // Adjust the border color for the bars
-            // yAxisLabelH={50}
-            // yAxisLabelV={50}
-          
             showTooltip = {true}
             cWidth = {800}
             cHeight = {500}
@@ -245,7 +240,7 @@ const Bar = () => {
         <iframe 
                 width="850" 
                 height="478" 
-                src="https://www.youtube.com/embed/8C9QLHS9FkM" 
+                src="https://www.youtube.com/embed/NQf95LlbXXs" 
                 title="YouTube video player" 
               
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
