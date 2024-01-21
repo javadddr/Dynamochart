@@ -26,35 +26,35 @@ const StackVertica = () => {
   const App = () => {
   
     const data = [
-      { label: 'Group A', value: { One: 70, Two: 61, Three: 55 }},
-      { label: 'Group C', value: { One: 110, Two: 85, Three: 120 }},
-      { label: 'Group D', value: { One: 59, Two: 25, Three: 67 }},
-      { label: 'Group p', value: { One: 92, Two: 36, Three: 26  }},
-      { label: 'Group k', value: { One: 61, Two: 65, Three: 48 }},
+      { label: 'group A', value: { one: 100, two: 65, three: 120 ,x4:110,x5:66,x6:56}},
+      { label: 'group B', value: { one: 10, two: 65, three: 10 } },
+      { label: 'group C', value: { one: 110, two: 85, three: 120,x4:50,x5:66  }},
+      { label: 'group D', value: { one: 110, two: 85, three: 120 ,x4:10,x5:66 }},
+      { label: 'group p', value: { one: 110, two: 85, three: 120 ,x4:10,x5:66 }},
+      { label: 'group k', value: { one: 110, two: 85, three: 120 ,x4:10,x5:66 }},
+      { label: 'group n', value: { one: 110, two: 85, three: 120 ,x4:10,x5:66,x6:50 }},
      
     ];
   
-    const colors = ['#d8b9d4', '#a8d8e8', '#eacca0','#b1dfbb','#f4c9b9'];
-  
-  
+    const colors = ['#03B2AF', '#2E96FF', '#B800D8','#03B2AF','aqua',"yellow"];
   
     return (
-      <div>
       <DySideStackChart
         data={data}
-        colors={colors}
-        valueDisplayPosition = 'top'
-        chartWidth = {600}
-        chartHeight = {350}
-        chartPadding = {{ top: 90, right: 130, bottom: 10, left: 110 }}
-        chartMargin= {{ top: 40, right: 0, bottom: 0, left: 5 }}
+        colors={colors}  // The colors are for each group in labels
+        valueDisplayPosition = 'top'  //can be bottom,top
+        chartWidth = {1000}
+        chartHeight = {300}
+        chartPadding = {{ top: 0, right: 0, bottom: 0, left: 0 }}
+        chartMargin= {{ top: 0, right: 0, bottom: 0, left: 0 }}
         gridNumber={5}
-        xAxis='Group'
+        xAxis='group'
         yAxis='value'
-        template='t1'
+        template='t2' //template can be "t1" and "t2"
         chartTitle="Utilisation of each line"
+        showLegend={true} //Legned will be shown if it is true
+        valuesColor="Black"  //Color of the values shown inside bars
       />
-      </div>
     );
   };
   
@@ -95,6 +95,7 @@ const StackVertica = () => {
     yAxis='Utilisation'
     template='t2'
     chartTitle="Utilisation of each line"
+    valuesColor="Black"
     />
   </div>
         </div>

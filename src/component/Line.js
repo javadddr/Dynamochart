@@ -35,7 +35,6 @@ const Line = () => {
   
   
     return (
-      <div>
       <DyLine
         data={data}
         colors={colors}
@@ -53,7 +52,6 @@ const Line = () => {
         dataPoints={5}
         chartBorder={true}
       />
-      </div>
     );
   };
   
@@ -86,7 +84,7 @@ const Line = () => {
      colors={colors}
      xAxisTitle = "Date"
      yAxisTitle = "Value"
-     lineShape="curveMonotoneX"    
+     lineShape="curveStep"    
       /* 
      curveLinear: d3.curveLinear,
      curveStep: d3.curveStep,

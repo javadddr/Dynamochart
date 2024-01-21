@@ -50,21 +50,20 @@ const Calendar = () => {
       Isabella: 'pink',
      
     };
-  
     return (
-      <div>
         <DyCalendar 
-        data={data}
-        colors={colors}    ///either use colors or chartColor
-        // chartColor={{red:244,green:238,blue:244,singel:false}}   
-        mode="value" ///value  and activities
-        showLabel={true}
-        labelColor="#ffa8a8"
-        showSummery={false}
-        chartWidth={1600}
-        chartHeight={650}
+          data={data7}
+          colors={colors}    ///either use colors or chartColor
+          chartColor={{red:244,green:238,blue:244,singel:false}}   
+          mode="value" ///value  and activities
+          showAll="Min"   //all,Sum,Ave,Max,Min
+          showLabel={true}
+          labelColor="#ffa8a8"
+          showSummery={true}
+          chartWidth={1300}
+          chartHeight={600}
+          defaultMonth="november-2023"
         />
-      </div>
     );
   };
   
@@ -85,7 +84,7 @@ const Calendar = () => {
       showLabel={true}
       labelColor="#ffa8a8"
       showSummery={true}
-      chartWidth={1000}
+      chartWidth={1200}
       chartHeight={500}
       defaultMonth="november-2023"
       />

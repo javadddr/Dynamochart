@@ -40,22 +40,23 @@ const HeatMap = () => {
     const colors = '#D8DD2B'
   
     return (
-      <div>
       <DyHeatMap
-      chartData={data}
-      colors={colors}
-      yAxis="Channel"
-      xAxis="Date"
-      yAxisTitle="Categories"
-      xAxisTitle="Date"
-      value={["Facebook", "Google","Insta"]}
-      calculate="sum"
-      chartWidth={1300}
-      chartHeight={600}
-      chartTitle="Conversion Rate "
-      xAxisRotate={45}
+        chartData={data}
+        colors={colors}
+        yAxis="Channel" // Make sure you pass the Y-Axis data here
+        xAxis="Date" // Make sure you pass the X-Axis data here
+        yAxisTitle="Categories"
+        xAxisTitle="Date"
+        value={["Facebook", "Google","Insta"]} // Here you can pass what values you want to show, 
+        calculate="sum"  //it could be "sum","min","max" or "average"
+        chartWidth={1300}
+        chartHeight={600}
+        chartTitle="Conversion Rate "
+        xAxisRotate={0}
+        chartTemplate="t1" //chartTemplate can be "t1" or "t2"
+        fontValues={14}
+        colorValues="black"
     />
-      </div>
     );
   };
   
@@ -74,7 +75,7 @@ const HeatMap = () => {
           yAxisTitle="Categories"
           xAxisTitle="Date"
           value={["Facebook", "Google","Insta"]}
-          calculate="sum"
+          calculate="average"
           chartWidth={800}
           chartHeight={350}
           chartTitle="Conversion Rate "

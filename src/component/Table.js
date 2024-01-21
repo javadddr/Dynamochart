@@ -46,8 +46,8 @@ const Table = () => {
     { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Side"},tag:"transit"},
     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 ,value:{Customers_Booked:20,Revenue_Geerated:4000,Manager:"Liliya"},tag:"excption"},
   ];
-
-  
+  //“value” is the data displayed in the drop-down menu when a row is clicked
+  //Here you can give width to columns or change their names.
   const columns = [
     { field: 'id', headerName: 'ID', width: 70},
     { field: 'firstName', headerName: 'First name', width: 130 },
@@ -64,16 +64,15 @@ const Table = () => {
 
   
     return (
-      <div>
       <DyTable 
-          rows={rows}
-          columns={columns}
-          pagesSize={10}
-          chartMaxWidth={900}
-          showSearch={true}
-          tableTemplate="t1" 
-          />
-      </div>
+        rows={rows}
+        colors={colors}
+        columns={columns}
+        pagesSize={10}
+        chartMaxWidth={700}
+        showSearch={true}
+        tableTemplate="t1" 
+        />
     );
   };
   

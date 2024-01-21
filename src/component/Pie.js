@@ -31,26 +31,23 @@ const Pie = () => {
   
   const colors = ['#E15759', '#F28E2C', '#4E79A7', '#76B7B2', '#e9b0ef'];
   
-  
     return (
-      <div>
       <DyPie
           data={data}
           colors={colors}
           chartWidth={700}
           chartHeight={600}
-          chartPadding={70}  ///this
-          padding={{top:40,left:10,right:110,bottom:10}}///this
+          chartPadding={70}  
+          padding={{top:40,left:10,right:110,bottom:10}}
           donutRatio={50}
           showTotal={true}
-          totalFormat="percentage"   ///number or percentage
+          totalFormat="percentage"   //can be "number" or "percentage"
           totalSize={25}
           title="Lines' Costs"
           showSmall={3}
           strokeWidth="0"
-          chartTemplate="t2"
+          chartTemplate="t2" //chartTemplate can be "t1" or "t2"
         />
-      </div>
     );
   };
   
@@ -72,7 +69,7 @@ const Pie = () => {
         showTotal={true}
         totalFormat="number"   ///number or percentage
         totalSize={25}
-        title="Lines' Costs"
+        title="Lines' Costs ($)"
         showSmall={3}
         strokeWidth="0"
         chartTemplate="t1"
@@ -90,7 +87,7 @@ const Pie = () => {
         showTotal={true}
         totalFormat="percentage"   ///number or percentage
         totalSize={25}
-        title="Lines' Costs"
+        title="Lines' Costs (Percentage of total)"
         showSmall={3}
         strokeWidth="0"
         chartTemplate="t2"

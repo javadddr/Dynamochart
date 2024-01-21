@@ -84,78 +84,23 @@ const Daycalendar = () => {
   const App = () => {
   
     const data = [
-      {
-        start: '2023-11-24T08:30:00.000Z',
-        finish: '2023-11-24T14:50:00.000Z',
-        name: 'book',
-        shift: 'Morning',
-      },
-      {
-        start: '2023-11-24T10:00:00.000Z',
-        finish: '2023-11-24T12:30:00.000Z',
-        name: 'Javad',
-        shift: 'Morning',
-      },
-      {
-        start: '2023-11-24T08:00:00.000Z',
-        finish: '2023-11-24T16:30:00.000Z',
-        name: 'Shahram',
-        shift: 'Part-Time',
-      },
-      {
-        start: '2023-11-24T12:30:00.000Z',
-        finish: '2023-11-24T17:30:00.000Z',
-        name: 'John',
-        shift: 'Afternoon',
-      },
-      {
-        start: '2023-11-24T08:00:00.000Z',
-        finish: '2023-11-24T14:30:00.000Z',
-        name: 'Lisa',
-        shift: 'Morning',
-      },
-      {
-        start: '2023-11-24T10:00:00.000Z',
-        finish: '2023-11-24T12:30:00.000Z',
-        name: 'MoNo',
-        shift: 'Morning',
-      },
-      {
-        start: '2023-11-24T08:00:00.000Z',
-        finish: '2023-11-24T16:30:00.000Z',
-        name: 'Viorel',
-        shift: 'Part-Time',
-      },
-      {
-        start: '2023-11-24T12:30:00.000Z',
-        finish: '2023-11-24T17:30:00.000Z',
-        name: 'Tim',
-        shift: 'Afternoon',
-      },
+      {start: '2023-11-25T08:30:00.000Z', finish: '2023-11-25T14:50:00.000Z', name: 'Susan', shift: 'Morning'},
+      {start: '2023-11-25T10:00:00.000Z', finish: '2023-11-25T12:30:00.000Z', name: 'Javad', shift: 'Morning'},
+      {start: '2023-11-25T08:00:00.000Z', finish: '2023-11-25T16:30:00.000Z', name: 'Shahram', shift: 'Part-Time'},
+      {start: '2023-11-25T12:30:00.000Z', finish: '2023-11-25T17:30:00.000Z', name: 'John', shift: 'Afternoon'},
+      {start: '2023-11-25T08:00:00.000Z', finish: '2023-11-25T14:30:00.000Z', name: 'Lisa', shift: 'Morning'},
+      {start: '2023-11-25T10:00:00.000Z', finish: '2023-11-25T12:30:00.000Z', name: 'Kristina', shift: 'Morning'},
+      {start: '2023-11-25T08:00:00.000Z', finish: '2023-11-25T16:30:00.000Z', name: 'Viorel', shift: 'Part-Time'},
+      {start: '2023-11-25T12:30:00.000Z', finish: '2023-11-25T17:30:00.000Z', name: 'Tim', shift: 'Afternoon'}
     ];
     
     const colors = [
-    
-      {
-       
-        color: '#E15759',
-        shift: 'Morning',
-      },
-      {
-     
-        color: '#F28E2C',
-        shift: 'Part-Time',
-      },
-      {
-       
-        color: '#4E79A7',
-        shift: 'Afternoon',
-      },
+      {color: '#E15759', shift: 'Morning'},
+      {color: '#F28E2C', shift: 'Part-Time'},
+      {color: '#4E79A7', shift: 'Afternoon'}
     ];
-    
   
     return (
-      <div>
       <DyDaycalendar 
         data={data} 
         colors={colors}
@@ -164,8 +109,8 @@ const Daycalendar = () => {
         from={0}
         to={24}
         weekend={[0,6]}// Sunday (0) and Saturday (6) are weekend days
+        defaultDay="2023-12-25"  //yyyy-mm-dd
         />
-      </div>
     );
   };
   

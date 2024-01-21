@@ -59,8 +59,8 @@ const Funnel = () => {
         chartHeight = {420}
         chartTitle="Marketing Funnel Chart"
         chartTitleFontSize={22}
-        showSmall={7}
-        chartDecimals={0}
+        showSmall={7}  //7 means that it won't show the values when they are smaller than 7
+        chartDecimals={0}  //funnel alues' decimal
         chartTemplate="t2"
     />  
       </div>

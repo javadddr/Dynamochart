@@ -46,18 +46,17 @@ const PercentageBar = () => {
   
   
     return (
-      <div>
       <DyPercentageBar 
         data={data}
         colors={colors}
         chartWidth={900}
-        chartHeight={400}
-        sort= {["Operation","descending" ]}
-        chartTitle="Departmental Overhead Rate"
-        barsGap={5}
-        barHeight={40}
+        chartHeight={430}
+        sort= {["Operation","descending" ]} //You can sort the values of any filed
+        chartTitle="Costs"
+        barsGap={10}
+        barHeight={50}
+        chartTemplate="t2" //chartTemplate can be "t1" or "t2"
       />
-      </div>
     );
   };
   
@@ -73,7 +72,7 @@ const PercentageBar = () => {
             chartWidth={700}
             chartHeight={300}
             sort= {["Republican","descending" ]}
-            chartTitle="Donation to the political Parties"
+            chartTitle="Headcount Cost"
             barsGap={5}
             barHeight={20}
             chartTemplate="t1"
@@ -85,8 +84,8 @@ const PercentageBar = () => {
             colors={colors}
             chartWidth={700}
             chartHeight={300}
-            sort= {["Republican","descending" ]}
-            chartTitle="Donation to the political Parties"
+            sort= {["Operation","descending" ]}
+            chartTitle="Costs"
             barsGap={0}
             barHeight={30}
             chartTemplate="t2"

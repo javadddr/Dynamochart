@@ -22,12 +22,10 @@ const Stack = () => {
 
 
   const codeString1 = `  import React from 'react'
-  import {DyStackChart} from 'dynamochart';
+  import {DyStackChart} from 'dynamochart';const App = () => {
 
-  const App = () => {
-  
     const data = [
-      { name: 'Hub 1', age: { EU: 87, US: 71, UK: 120 } },
+      { name: 'Hub 1', age: { EU: 7, US: 71, UK: 120 } },
       { name: 'Hub 2', age: { EU: 40, US: 35, UK: 99 } },
       { name: 'Hub 3', age: { EU: 37, US: 85, UK: 88 } },
       { name: 'Hub 4', age: { EU: 53, US: 65, UK: 29 } },
@@ -35,11 +33,9 @@ const Stack = () => {
      
     ];
   
-  
     const colors = ['#d8b9d4', '#a8d8e8', '#eacca0'];
   
     return (
-      <div>
       <DyStackChart 
         initialData={data} 
         colors={colors} 
@@ -47,20 +43,22 @@ const Stack = () => {
         stepLines={[
         { label: 'Adding First Empoloyee', position: 35, marginTop:18.5,height:60, style:'solid'},
         { label: 'Adding second Empoloyee', position:375, marginTop:18.5,height:60, style:'dashed' },
-        ]}
-        chartPadding = {{ top: 50, right: 120, bottom: 20, left: 0 }}
-        chartMargin = {{ top: 50, right: 50, bottom: 0, left: 10 }}
-        chartWidth = {550}
+        ]}   // You can add custom rows to indicate a change in the process.
+        chartPadding = {{ top: 0, right:0, bottom: 20, left: 0 }}
+        chartMargin = {{ top: 50, right: 30, bottom: 0, left: 10 }}
+        chartWidth = {1050}
         chartHeight = {300}
         gap = {20} // Gap between bars
-        xAxis = 'name'
+        xAxis = 'name'   //this is coming from your data 
         xAxisTitle='Hubs'
-        yAxis = 'age' 
+        yAxis = 'age' //this is coming from your data 
         yAxisTitle='Performance'
-        template='t2'
+        template='t2'  //template can be "t1" or "t2"
         chartTitle='Performance vs Hubs'
+        valuesColor="black"
+        valuesFontSize={13}
+        showTotal={true}
         />
-      </div>
     );
   };
   

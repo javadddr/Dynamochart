@@ -89,9 +89,10 @@ const Pricing = () => {
        
           </div>
           <div className='forfree'>
-            <a href="https://billing.globalpackagetracker.com/login" target="_blank" rel="noopener noreferrer">
-              <button className='linkmainsdex'>Buy Now</button>
-            </a>
+          <Link to="/contact">
+                <button className='linkmainsdrr'>Contact us</button>
+              </Link>
+           
           </div>
           <div className="greenSquare"></div>
           <div className="greenSquare2"></div>
@@ -142,9 +143,10 @@ const Pricing = () => {
         
           </div>
           <div className='forfree'>
-            <a href="https://billing.globalpackagetracker.com/login" target="_blank" rel="noopener noreferrer">
-              <button className='linkmainsd'>Buy Now</button>
-            </a>
+          <Link to="/contact">
+                <button className='linkmainsdrr'>Contact us</button>
+              </Link>
+           
           </div>
           <div className="greenSquare"></div>
           <div className="greenSquare2"></div>
@@ -165,10 +167,10 @@ const Pricing = () => {
           <p>New chart owned by you: <br></br><span>€150</span></p>
               </div>
               <div className='forfree1'>
-  <Link to="/contact">
-    <button className='linkmainsdrr'>Contact us</button>
-  </Link>
-</div>
+              <Link to="/contact">
+                <button className='linkmainsdrr'>Contact us</button>
+              </Link>
+            </div>
                 <div className="greenSquare"></div>
           <div className="greenSquare2"></div>
         

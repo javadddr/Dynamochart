@@ -34,7 +34,7 @@ const Gauge = () => {
         target={1100} 
         title={'Customers terminated by cx '} 
         strokeWidth={110} 
-        segment="date"
+        segment="date"  //can be the "date" or "VALUE" 
         legendTitle="CX employees"
         chartWidth={700}
         chartHeight={450}

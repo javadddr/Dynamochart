@@ -22,47 +22,46 @@ const BarHorizontal = () => {
   import {DyBarHorizontal} from 'dynamochart';
 
   const App = () => {
-    
-  const data = [
-    { Line: 'Line 1', Shipments: 38, color: '#8ef6e4' },
-    { Line: 'Line 2', Shipments: 20, color: '#9896f1' },
-    { Line: 'Line 3', Shipments: 55, color: '#ED5485' },
-    { Line: 'Line 4', Shipments: 43, color: '#57D1C9' },
-    { Line: 'Line 5', Shipments: 29, color: '#FFFBCB' },
-    { Line: 'Line 6', Shipments: 49, color: '#FFE869' },
-  ];
+    const data = [
+      { label: 'Line 1', value: 38, color: '#4CAF50' },
+      { label: 'Line 2', value: 20, color: '#2196F3' },
+      { label: 'Line 3', value: 55, color: '#FF5722' },
+      { label: 'Line 4', value: 38, color: '#4CAF50' },
+      { label: 'Line 5', value: 20, color: '#2196F3' },
+      { label: 'Line 6', value: 55, color: '#FF5722' },
+    ];
   
     return (
-      <div>
-      <DyBarHorizontal
-      data={data}
-      xAxis='Shipments'
-      yAxis='Line'
-      showTooltip = {true}
-      borderWidth={2}
-      showValues={true}
-      valueDisplayPosition='middle' 
-      valueFontSize = '16px'
-      valueFontFamily = 'inter'
-      showTicks = {true}
-      showYLabels = {true}
-      chartTitle = "Number of shipments"
-      grid={true}
-      gridNumber={3}
-      gridColor="green"
-      sort='n'  //az,za,n
-      barHeight = {60}
-      spacingBetweenBars = {10}
-      cWidth = {500}
-      margin={{ left: 170, right: 60, top: 60, bottom: 40 }}
-      barBorderRadius={2}
-      template='t2'
-      </div>
+      
+    <DyBarHorizontal
+          data={data}
+          xAxis='value'
+          yAxis='label'
+          showTooltip = {true}
+          borderWidth={2}
+          showValues={true}
+          valueDisplayPosition='top' 
+          valueFontSize = '16px'
+          valueFontFamily = 'inter'
+          showTicks = {true}
+          showYLabels = {true}
+          chartTitle = "Number of shipments"
+          grid={true}
+          gridNumber={5}
+          gridColor="green"
+          sort='n'  //az,za,n
+          barHeight = {40}
+          spacingBetweenBars = {10}
+          cWidth = {600}
+          margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+          barBorderRadius={0}
+          template='t2'
+        />
+      
     );
   };
   
-  export default App;
-  `;
+  export default App;`;
 
 
   return (

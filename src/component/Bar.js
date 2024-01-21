@@ -18,34 +18,31 @@ const Bar = () => {
 
   const codeString1 = `  import React from 'react'
   import {DyBar} from 'dynamochart';
-
+  
   const App = () => {
   
     const data = [
-      { name: '25-09-2023', age: 38, color: '#d8b9d4' },
-      { name: '02-09-2023', age: 25, color: '#a8d8e8' },
-      { name: '07-09-2023', age: 55, color: '#eacca0' },
-      { name: '20-10-2023', age: 48, color: '#b1dfbb' },
-      { name: '19-09-2023', age: 19, color: '#f4c9b9' },
-      { name: '29-11-2023', age: 63, color: '#c3c4cf' },
-      { name: '21-12-2023', age: 32, color: '#c9cfc3' },
-   
+      { name: '25-09-2023', age: 38, color: '#4CAF50' },
+      { name: '02-09-2023', age: 25, color: '#2196F3' },
+      { name: '07-09-2023', age: 55, color: '#FF5722' },
+      { name: '20-10-2023', age: 19, color: '#FFC107' },
+      { name: '19-09-2023', age: 27, color: '#FFC107' },
+      { name: '29-11-2023', age: 49, color: '#FFC107' },
+      { name: '21-12-2023', age: 32, color: '#FFC107' },
     ];
   
     return (
-      <div>
       <DyBar
-          data={data}
-          xAxis="name"
-          yAxis="age"
-          showValues={true} // Ensure that showValues is set to true
-          valueDisplayPosition="top" //bottom,middle,top
+          data={data}   //data is the name of the state in which your data is stored. In this case data is “data” because we have “const data=[]”.
+          xAxis="name"  //If your data has a different name, you can enter it here. The date, which we want to display on the X-axis in this case, is called “Name”.
+          yAxis="age"   //If your data has a different name, you can enter it here. The date, which we want to display on the y-axis in this case, is called “Age”.
+          showValues={true}  // Ensure that showValues is set to true
+          valueDisplayPosition="bottom" //can be "bottom","middle","top"
           valueFontSize='15px'
           valueFontFamily='inter'
-          valueFontColor="black"
           showXLabels={true} // Set to true to show x-axis labels or false to hide
           showYLabels={true} // Set to true to show y-axis labels or false to hide
-          chartTitle="Utilization Per Line "
+          chartTitle="Utilization vs Date"
           showXAxisLabel={true}
           showYAxisLabel={true}
           xAxisLabel="Date"
@@ -54,29 +51,28 @@ const Bar = () => {
           yAxisLabelFont="inter"
           xAxisLabelFontSize="16px"
           yAxisLabelFontSize="16px"
-          xAxisLabelRotate="-90" // 'horizontal', 'vertical', or 45
+          xAxisLabelRotate="0" // 'horizontal', 'vertical', or 45
           yAxisLabelRotate="0" // 'horizontal', 'vertical', or 45
           xAxisLine={true}
           yAxisLine={true}
           xAxisTick={true}
           yAxisTick={true}
-          gridLine={true}
-          barsWidth={16}
+          gridLine={false}
+          barsWidth={20}
           barBorderRadius={2} // Adjust the border radius for the bars
           barBorderColor="black" // Adjust the border color for the bars
           showTooltip = {true}
           cWidth = {1000}
           cHeight = {600}
           chartPadding={{ top: 110, right: 80, bottom: 150, left: 110 }}
-          template='t1' // Can be t1 and t2
-          chartBorder={10}  //border redius
+          template='t2'
           chartBoxShadow={false}
           sortV = 'za' // Adjust the sort "za","az","n"
-          sortD='n'    // Adjust the sort "za","az","n"
+          sortD='n'
           dateFormat='dd-mm-yyyy' //can be 'dd-mm-yyyy' or 'mm-dd-yyyy'
-          xAxisLabelM={20}
+          xAxisLabelM={70}
+          valueFontColor="black"
         />
-      </div>
     );
   };
   
